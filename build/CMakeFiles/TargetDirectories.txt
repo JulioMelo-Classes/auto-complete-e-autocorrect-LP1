@@ -1,0 +1,3 @@
+/home/rafael/rafael/trabalho-2-auto-complete-e-autocorrect-hugofsantos/build/CMakeFiles/rebuild_cache.dir
+/home/rafael/rafael/trabalho-2-auto-complete-e-autocorrect-hugofsantos/build/CMakeFiles/edit_cache.dir
+/home/rafael/rafael/trabalho-2-auto-complete-e-autocorrect-hugofsantos/build/CMakeFiles/words_complete_correct.dir

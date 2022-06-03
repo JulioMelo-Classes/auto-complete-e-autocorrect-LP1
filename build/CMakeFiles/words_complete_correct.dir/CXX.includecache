@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/LoadBase.hpp
+string
+-
+vector
+-
+
+/home/rafael/rafael/trabalho-2-auto-complete-e-autocorrect-hugofsantos/src/main.cpp
+iostream
+-
+LoadBase.hpp
+/home/rafael/rafael/trabalho-2-auto-complete-e-autocorrect-hugofsantos/src/LoadBase.hpp
+
