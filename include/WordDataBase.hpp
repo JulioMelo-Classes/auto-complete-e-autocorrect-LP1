@@ -2,7 +2,9 @@
 #define WordDataBase_hpp
 #include <string>
 #include <vector>
-//#include "Algo.hpp"
+#include <algorithm>
+
+
 using namespace std;
 
 /*Classe responsável por gerenciar um banco de dados de palavras*/
@@ -26,6 +28,14 @@ class WordDataBase{
          * @param limit Um número que corresponde ao limite de palavras que serão mostradas (Se o limiter for false esse parâmetro
          * não terá relevância) 
          */
-        void imprimeBase(bool limiter, size_t limit);
+        void printBase(bool limiter, size_t limit);
+
+        /**
+         * @brief Ordena a base pela ordem alfabética das palavras
+         * 
+         */
+        void sortAlphabetically();
+
+
 };
 #endif

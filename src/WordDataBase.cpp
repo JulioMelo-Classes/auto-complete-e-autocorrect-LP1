@@ -39,7 +39,7 @@ WordDataBase::WordDataBase(string filePath){
 	}
 }
 
-void WordDataBase::imprimeBase(bool limiter,size_t limit){
+void WordDataBase::printBase(bool limiter,size_t limit){
     size_t t = (limit > 0)? limit: 0;
     if (!limiter){
         t = m_base.size();
@@ -49,4 +49,11 @@ void WordDataBase::imprimeBase(bool limiter,size_t limit){
         cout <<  m_base[i].first << " | " << m_base[i].second << endl;
     }
     
+}
+
+void WordDataBase::sortAlphabetically(){
+    auto begin = m_base.begin();
+    auto end = m_base.end();
+
+    std::sort(begin, end, [] (const auto &p1, const auto &p2){return p1.second < p2.second;});
 }
