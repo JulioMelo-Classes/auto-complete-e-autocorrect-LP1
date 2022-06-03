@@ -1,4 +1,4 @@
-#include "LoadBase.hpp"
+#include "WordDataBase.hpp"
 #include <string>
 #include <fstream>
 #include <sstream>
@@ -6,15 +6,18 @@
 #include <iostream>
 using namespace std;
 
-LoadBase::LoadBase(string dir){
-    m_dir = dir;
-    fstream palavrasfile;
-	palavrasfile.open(m_dir, ios::in);
+WordDataBase::WordDataBase(string filePath){
+    m_file_path = filePath;
+    
+	fstream palavrasfile;
+	palavrasfile.open(m_file_path, ios::in);
+
 	int peso;
 	string palavra;
 	bool swap = true;
     string frase;
     int count = 0;
+	
 	while (getline(palavrasfile, frase))
 	{
         istringstream iss(frase);
@@ -36,9 +39,9 @@ LoadBase::LoadBase(string dir){
 	}
 }
 
-void LoadBase::imprimeBase(bool header){
-    size_t t = 5;
-    if (!header){
+void WordDataBase::imprimeBase(bool limiter,size_t limit){
+    size_t t = (limit > 0)? limit: 0;
+    if (!limiter){
         t = m_base.size();
     }
     for (size_t i = 0; i < t; i++)

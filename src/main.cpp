@@ -1,9 +1,15 @@
 #include <iostream>
-#include "LoadBase.hpp"
+#include "WordDataBase.hpp"
 
 int main(int argc, char *argv[]){
-    /*codigo?*/
-    LoadBase db = LoadBase("../data/ptbrcorpus.txt");
-    db.imprimeBase(true);
+
+    if(argc == 2){
+        const std::string path_file = argv[1]; // Arquivo informado pelo usuário
+        WordDataBase db = WordDataBase(path_file);
+        db.imprimeBase(true, 5);
+    }else{
+        std::cout << "Argumentos inválidos!" << std::endl;
+    }
+
     return 0;
 }

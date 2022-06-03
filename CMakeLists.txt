@@ -4,7 +4,7 @@ include_directories(./include)
 add_executable(
     words_complete_correct
     ./src/main.cpp
-    ./src/LoadBase.cpp
+    ./src/WordDataBase.cpp
     ./src/AutoComplete.cpp
     ./src/AutoCorrect.cpp
 )
