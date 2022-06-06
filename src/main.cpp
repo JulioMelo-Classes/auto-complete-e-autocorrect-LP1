@@ -1,16 +1,6 @@
 #include <iostream>
 #include "WordDataBase.hpp"
 
-bool isSubStrBegin(const std::string &sub,const std::string &str){
-    if(sub.length() > str.length()) return false;
-
-    if(str.substr(0, sub.length()) == sub)
-        return true;
-    
-
-    return false;
-}
-
 int main(int argc, char *argv[]){
 
     // if(argc == 2){
@@ -25,26 +15,26 @@ int main(int argc, char *argv[]){
     // }else{
     //     std::cout << "Argumentos inválidos!" << std::endl;
     // }
-    std::vector<std::string> sentences = {"ABRACO", "SAO JOSE", "SAO PAULO", "SAO VALENTIN", "ABRA" };
+    std::vector<std::string> sentences = {"ABRA", "ABRACO", "SAO JOSE", "SAO PAULO", "SAO PEDRO", "SAO VALENTIN"};
     std::sort(sentences.begin(), sentences.end());
 
-    auto lower = std::lower_bound(sentences.begin(), sentences.end(), "ABC", [](const std::string s1, const std::string s2)->bool{
-        return s1 <= s2;
+    auto lower = std::lower_bound(sentences.begin(), sentences.end(), "SAO P", [](const std::string str, const std::string sentence)->bool{
+        return str <= sentence;
     });
 
-    auto upper = std::upper_bound(sentences.begin(), sentences.end(), "ABC", [](const std::string s1, const std::string s2)->bool{
-        return s1 > s2;
+    auto upper = std::upper_bound(sentences.begin(), sentences.end(), "SAO P", [](const std::string sentence, const std::string str)->bool{
+        std::string sub = str.substr(0, sentence.length());
+
+        return sentence < sub;
     });
+
+    std::cout << (lower - sentences.begin()) << std::endl;
+    std::cout << (upper - sentences.begin()) << std::endl;
 
     for(lower; lower < upper; lower++){
         const std::string palavra = *lower;
 
-        if(isSubStrBegin("ABC", palavra))
-            std::cout << *lower << std::endl;
-        else{
-            break;
-        }
-        
+        std::cout << palavra << std::endl;        
     }
 
     return 0;
