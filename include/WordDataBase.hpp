@@ -36,6 +36,12 @@ class WordDataBase{
          */
         void sortAlphabetically();
 
+        /**
+         * @brief Ordena a base pelo tamanho das sentenças
+         * 
+         */
+        void sortBySentenceSyze();
+
 
 };
 #endif

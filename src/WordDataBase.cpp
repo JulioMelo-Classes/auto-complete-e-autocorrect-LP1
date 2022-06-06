@@ -41,6 +41,7 @@ WordDataBase::WordDataBase(string filePath){
 
 void WordDataBase::printBase(bool limiter,size_t limit){
     size_t t = (limit > 0)? limit: 0;
+	
     if (!limiter){
         t = m_base.size();
     }
@@ -55,5 +56,16 @@ void WordDataBase::sortAlphabetically(){
     auto begin = m_base.begin();
     auto end = m_base.end();
 
-    std::sort(begin, end, [] (const auto &p1, const auto &p2){return p1.second < p2.second;});
+    std::sort(begin, end, [](const auto &p1, const auto &p2)->bool{
+		return p1.second < p2.second;
+	});
+}
+
+void WordDataBase::sortBySentenceSyze(){
+	auto begin = m_base.begin();
+	auto end = m_base.end();
+
+	std::sort(begin, end, [](const auto &p1, const auto &p2)->bool{
+		return p1.second.length() < p2.second.length();
+	});
 }
