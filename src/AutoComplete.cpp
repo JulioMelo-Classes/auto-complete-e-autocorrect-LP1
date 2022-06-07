@@ -4,12 +4,12 @@
 #include "AutoComplete.hpp"
 using namespace std;
 
-AutoComplete::AutoComplete(vector<pair<int, string>>& t_base_)
+AutoComplete::AutoComplete(WordDataBase *dataBase)
 {
-    m_baseComp = t_base_;
+    m_dbWords = dataBase;
 }
 
-pair<int, int> AutoComplete::searchPrefix(string t_val){
+void AutoComplete::searchPrefix(string t_val){
 
     auto funcUpper = [&](pair<int, string> str, pair<int, string> sentence)
     {
@@ -22,15 +22,20 @@ pair<int, int> AutoComplete::searchPrefix(string t_val){
         string a = sentence.second.substr(0, str.second.size());
         return str.second.compare(a) >= 0;
     };
-    int upper = upper_bound(m_baseComp.begin(), m_baseComp.end(), make_pair(0, t_val), funcUpper) - m_baseComp.begin();
-    int low = lower_bound(m_baseComp.begin(), m_baseComp.end(), make_pair(0, t_val), funcLower) - m_baseComp.begin();
-    
-    for (size_t i = upper; i < low; i++)
-    {
-        m_vComp.push_back(m_baseComp[i]);
+
+    auto begin = m_dbWords->getBeginBase(); // Inicia begin com o começo da base de palavras
+    auto end = m_dbWords->getEndBase(); // Inicia end com o final da base de palavras
+
+    begin = upper_bound(begin, end, make_pair(0, t_val), funcUpper);
+    end = lower_bound(begin, end, make_pair(0, t_val), funcLower);
+
+    for(auto it = begin; it < end; it++){
+        m_vComp.push_back(*it);
     }
-    
-    return make_pair(upper, low);//prescindível
+}
+
+void AutoComplete::clearVComp(){
+    m_vComp.clear();
 }
 
 void AutoComplete::printAutoCompleteBase(bool t_limiter,size_t t_limit){

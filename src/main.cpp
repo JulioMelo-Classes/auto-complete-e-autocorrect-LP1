@@ -9,9 +9,9 @@ int main(int argc, char *argv[]){
 
         WordDataBase db = WordDataBase(path_file);
         db.sortAlphabetically();
-        db.printWordDataBase(true, 40);//exibe a base de palavras(primeiros 40)
+        //db.printWordDataBase(true, 40);//exibe a base de palavras(primeiros 40)
 
-        AutoComplete ac = AutoComplete(db.getBase());//inicializa a classe AutoComplete com a base de palavras
+        AutoComplete ac = AutoComplete(&db);//inicializa a classe AutoComplete com a base de palavras
         ac.searchPrefix("POR");// procura na base de dados por palavras que iniciem com esse prefixo
         ac.printAutoCompleteBase(false, 0);//exibe a base vComp (inteira)
     }else{

@@ -9,25 +9,28 @@ using namespace std;
 /*Classe responsável por processar a base de palavras e gerar o vComp*/
 class AutoComplete{
     private: 
-        vector<pair< int , string>> m_baseComp; //Base armazenando a quantidade de ocorrências e a sentença
+        WordDataBase *m_dbWords; //Base armazenando a quantidade de ocorrências e as palavras
         vector<pair< int , string>> m_vComp; // Base armazenando todas entradas da base que iniciam com o prefixo buscado
     public:
 
         /**
          * @brief Constrói uma objeto do tipo AutoComplete
          * 
-         * @param t_base_ referencia do vetor da WordDataBase
+         * @param dataBase referência para um banco de palavras
          */
-        AutoComplete(vector<pair<int, string>>& t_base_);
+        AutoComplete(WordDataBase *dataBase);
 
         /**
-         * @brief Faz uma busca das ocorrencias do prefixo na base
+         * @brief Faz uma busca das ocorrencias do prefixo na base de palavras e alimenta m_vComp
          * 
          * @param t_val prefixo a ser pesquisado na base
-         * 
-         * @return um par com o indice inicial e final das ocorrencias do prefixo em t_baseComp(prescindivel)
          */
-        pair<int, int> searchPrefix(string t_val);
+        void searchPrefix(string t_val);
+
+        /**
+         * @brief Limpa o vetor m_vComp
+         */
+        void clearVComp();
 
         /**
          * @brief Imprime a base de m_vComp

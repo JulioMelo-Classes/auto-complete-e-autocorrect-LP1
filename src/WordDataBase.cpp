@@ -54,10 +54,15 @@ void WordDataBase::printWordDataBase(bool limiter, size_t limit)
 	}
 }
 
-vector<pair<int, string>> &WordDataBase::getBase()
-{
-	return m_base;
-}
+// vector<pair<int, string>> &WordDataBase::getBase()
+// {
+// 	return m_base;
+// }
+
+vector<pair<int, string>>::iterator WordDataBase::getBeginBase(){return m_base.begin();}
+
+
+vector<pair<int, string>>::iterator WordDataBase::getEndBase(){return m_base.end();}
 
 void WordDataBase::sortAlphabetically()
 {
