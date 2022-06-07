@@ -33,6 +33,11 @@ class AutoComplete{
         void clearVComp();
 
         /**
+         * @brief Ordena a base m_vComp pelo peso (ocorrências) das sentenças (Do maior para o menor)
+         */
+        void sortByWeight();
+
+        /**
          * @brief Imprime a base de m_vComp
          * 
          * @param limiter Um booleano que representa se a busca vai ser limitada à um número específico ou não

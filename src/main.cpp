@@ -13,6 +13,8 @@ int main(int argc, char *argv[]){
 
         AutoComplete ac = AutoComplete(&db);//inicializa a classe AutoComplete com a base de palavras
         ac.searchPrefix("POR");// procura na base de dados por palavras que iniciem com esse prefixo
+        ac.sortByWeight();
+
         ac.printAutoCompleteBase(false, 0);//exibe a base vComp (inteira)
     }else{
         std::cout << "Argumentos inválidos!" << std::endl;

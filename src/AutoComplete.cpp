@@ -36,6 +36,16 @@ void AutoComplete::searchPrefix(string t_val){
 
 void AutoComplete::clearVComp(){
     m_vComp.clear();
+
+}
+
+void AutoComplete::sortByWeight(){
+    const auto begin = m_vComp.begin();
+    const auto end = m_vComp.end();
+    
+    std::sort(begin, end, [](const auto p1, const auto p2)->bool{
+        return p1.first > p2.first;
+    });
 }
 
 void AutoComplete::printAutoCompleteBase(bool t_limiter,size_t t_limit){
