@@ -33,6 +33,20 @@ class AutoComplete{
         void clearVComp();
 
         /**
+         * @brief Pega o iterador do começo da base do autocomplete
+         * 
+         * @return vector<pair< int , string>>::iterator com o iterador apontando para o início do vetor da base
+         */
+        vector<pair< int , string>>::iterator getBegin();
+
+        /**
+         * @brief Pega o iterador do fim da base do autocomplete
+         * 
+         * @return vector<pair< int , string>>::iterator com o iterador apontando para o fim da base 
+         */
+        vector<pair< int , string>>::iterator getEnd();
+
+        /**
          * @brief Ordena a base m_vComp pelo peso (ocorrências) das sentenças (Do maior para o menor)
          */
         void sortByWeight();

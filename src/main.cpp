@@ -1,6 +1,7 @@
 #include <iostream>
 #include "WordDataBase.hpp"
 #include "AutoComplete.hpp"
+#include "Interface.hpp"
 
 int main(int argc, char *argv[]){
 
@@ -15,7 +16,11 @@ int main(int argc, char *argv[]){
         ac.searchPrefix("POR");// procura na base de dados por palavras que iniciem com esse prefixo
         ac.sortByWeight();
 
-        ac.printAutoCompleteBase(false, 0);//exibe a base vComp (inteira)
+        Interface::setAutoComplete(&ac);
+        Interface::printCandidateWords(4);
+
+        //ac.printAutoCompleteBase(false, 0);//exibe a base vComp (inteira)
+
     }else{
         std::cout << "Argumentos inválidos!" << std::endl;
     }

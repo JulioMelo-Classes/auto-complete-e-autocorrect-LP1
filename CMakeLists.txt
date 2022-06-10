@@ -7,5 +7,6 @@ add_executable(
     ./src/WordDataBase.cpp
     ./src/AutoComplete.cpp
     ./src/AutoCorrect.cpp
+    ./src/Interface.cpp
 )
 

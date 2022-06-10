@@ -36,8 +36,11 @@ void AutoComplete::searchPrefix(string t_val){
 
 void AutoComplete::clearVComp(){
     m_vComp.clear();
-
 }
+
+vector<pair<int, string>>::iterator AutoComplete::getBegin(){return m_vComp.begin();};
+
+vector<pair<int, string>>::iterator AutoComplete::getEnd(){return m_vComp.end();};
 
 void AutoComplete::sortByWeight(){
     const auto begin = m_vComp.begin();
