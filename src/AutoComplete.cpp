@@ -11,14 +11,14 @@ AutoComplete::AutoComplete(WordDataBase *dataBase)
 
 void AutoComplete::searchPrefix(string t_val){
 
-    auto funcUpper = [&](pair<int, string> str, pair<int, string> sentence)
+    auto funcLower = [&](pair<int, string> str, pair<int, string> sentence)
     {
         return str.second <= sentence.second;
     };
 
-    auto funcLower = [&](pair<int, string> sentence, pair<int, string> str)
+    auto funcUpper = [&](pair<int, string> sentence, pair<int, string> str)
     {
-        string prefix = str.second.substr(0, sentence.second.size());
+        string prefix = str.second.substr(0, sentence.second.length());
         
         return sentence.second < prefix;
     };
@@ -26,8 +26,8 @@ void AutoComplete::searchPrefix(string t_val){
     auto begin = m_dbWords->getBeginBase(); // Inicia begin com o começo da base de palavras
     auto end = m_dbWords->getEndBase(); // Inicia end com o final da base de palavras
 
-    begin = lower_bound(begin, end, make_pair(0, t_val), funcUpper);
-    end = upper_bound(begin, end, make_pair(0, t_val), funcLower);
+    begin = lower_bound(begin, end, make_pair(0, t_val), funcLower);
+    end = upper_bound(begin, end, make_pair(0, t_val), funcUpper);
 
     for(auto it = begin; it < end; it++){
         m_vComp.push_back(*it);
