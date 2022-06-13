@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include "AutoComplete.hpp"
+
 using namespace std;
 
 AutoComplete::AutoComplete(WordDataBase *dataBase)
@@ -11,14 +12,29 @@ AutoComplete::AutoComplete(WordDataBase *dataBase)
 
 void AutoComplete::searchPrefix(string t_val){
 
+    auto toUpperCase = [](const string str)->string{
+        string uper = str;
+
+        for(size_t i=0; i < str.length(); i++){
+            uper[i] = std::toupper(str[i]);
+        }
+
+        return uper;
+    }; // Função para deixar toda string em maiúsculo
+
+    t_val = toUpperCase(t_val);
+
     auto funcLower = [&](pair<int, string> str, pair<int, string> sentence)
     {
-        return str.second <= sentence.second;
+        string uper = toUpperCase(str.second);
+
+        return uper <= sentence.second;
     };
 
     auto funcUpper = [&](pair<int, string> sentence, pair<int, string> str)
     {
         string prefix = str.second.substr(0, sentence.second.length());
+        string uper = toUpperCase(prefix);
         
         return sentence.second < prefix;
     };

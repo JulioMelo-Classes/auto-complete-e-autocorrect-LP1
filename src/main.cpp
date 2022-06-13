@@ -13,7 +13,7 @@ int main(int argc, char *argv[]){
 
         AutoComplete ac = AutoComplete(&db);//inicializa a classe AutoComplete com a base de palavras
 
-        ac.searchPrefix("AB");// procura na base de dados por palavras que iniciem com esse prefixo
+        ac.searchPrefix("sa");// procura na base de dados por palavras que iniciem com esse prefixo
         ac.sortByWeight(); // Ordena o vetor de palavras candidatas ao autocomplete pelo peso
 
         Interface::setAutoComplete(&ac);
