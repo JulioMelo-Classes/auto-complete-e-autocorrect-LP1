@@ -61,6 +61,14 @@ class Interface{
     static void printLine(string autoCompleteWord, string autoCorrectWord, size_t lineSize);
 
     /**
+     * @brief Calcula o número de linhas que a tabela de palavras candidatas deve ter apartir do vComp e vCorr
+     * 
+     * @param max Número máximo de linhas que a tabela deve ter
+     * @return size_t referente ao número de linhas que a tabela deve possuir
+     */
+    static size_t getNumberOfLines(size_t max);
+
+    /**
      * @brief Imprime o cabeçalho da tabela de saída
      * 
      * @param lineSize Tamanho da linha do auto complete
