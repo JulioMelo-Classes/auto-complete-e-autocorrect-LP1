@@ -52,18 +52,3 @@ void AutoComplete::sortByWeight(){
         return p1.first > p2.first;
     });
 }
-
-void AutoComplete::printAutoCompleteBase(bool t_limiter,size_t t_limit){
-    size_t t = (t_limit > 0)? t_limit: 0;
-    if (!t_limiter){
-        t = m_vComp.size();
-    }
-    if(m_vComp.empty()){
-        return;
-    }
-    cout << "-----AUTOCOMPLETE------" << endl;
-    for (size_t i = 0; i < m_vComp.size(); i++)
-    {
-        cout << m_vComp[i].second << endl;
-    }
-}

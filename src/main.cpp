@@ -10,16 +10,14 @@ int main(int argc, char *argv[]){
 
         WordDataBase db = WordDataBase(path_file);
         db.sortAlphabetically();
-        //db.printWordDataBase(true, 40);//exibe a base de palavras(primeiros 40)
 
         AutoComplete ac = AutoComplete(&db);//inicializa a classe AutoComplete com a base de palavras
-        ac.searchPrefix("SA");// procura na base de dados por palavras que iniciem com esse prefixo
-        ac.sortByWeight();
+
+        ac.searchPrefix("AB");// procura na base de dados por palavras que iniciem com esse prefixo
+        ac.sortByWeight(); // Ordena o vetor de palavras candidatas ao autocomplete pelo peso
 
         Interface::setAutoComplete(&ac);
-        Interface::printCandidateWords(4);
-
-        //ac.printAutoCompleteBase(false, 0);//exibe a base vComp (inteira)
+        Interface::printCandidateWords(8);
 
     }else{
         std::cout << "Argumentos inválidos!" << std::endl;

@@ -57,13 +57,5 @@ class AutoComplete{
          * @brief Ordena a base m_vComp pelo peso (ocorrências) das sentenças (Do maior para o menor)
          */
         void sortByWeight();
-
-        /**
-         * @brief Imprime a base de m_vComp
-         * 
-         * @param limiter Um booleano que representa se a busca vai ser limitada à um número específico ou não
-         * @param limit Um número que corresponde ao limite de palavras que serão mostradas (Se o limiter for false esse parâmetro
-         */
-        void printAutoCompleteBase(bool limiter,size_t limit);
 };
 #endif

@@ -20,15 +20,6 @@ class WordDataBase{
          */
         WordDataBase(string filePath);
 
-        /**
-         * @brief Imprime a base de dados
-         * 
-         * @param limiter Um booleano que representa se a busca vai ser limitada à um número específico ou não
-         * @param limit Um número que corresponde ao limite de palavras que serão mostradas (Se o limiter for false esse parâmetro
-         * não terá relevância) 
-         */
-        void printWordDataBase(bool limiter, size_t limit);
-
         // /**
         //  * @brief funcao get de t_base como referência
         //  * 

@@ -40,25 +40,6 @@ WordDataBase::WordDataBase(string filePath)
 	}
 }
 
-void WordDataBase::printWordDataBase(bool limiter, size_t limit)
-{
-	size_t t = (limit > 0) ? limit : 0;
-	if (!limiter)
-	{
-		t = m_base.size();
-	}
-	cout << "-----WORDSDATABASE------" << endl;
-	for (size_t i = 0; i < t; i++)
-	{
-		cout << m_base[i].first << " | " << m_base[i].second << endl;
-	}
-}
-
-// vector<pair<int, string>> &WordDataBase::getBase()
-// {
-// 	return m_base;
-// }
-
 vector<pair<int, string>>::iterator WordDataBase::getBeginBase(){return m_base.begin();}
 
 
