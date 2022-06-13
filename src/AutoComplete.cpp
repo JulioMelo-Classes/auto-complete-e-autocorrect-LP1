@@ -42,6 +42,8 @@ vector<pair<int, string>>::iterator AutoComplete::getBegin(){return m_vComp.begi
 
 vector<pair<int, string>>::iterator AutoComplete::getEnd(){return m_vComp.end();};
 
+size_t AutoComplete::getBaseSize(){return m_vComp.size();};
+
 void AutoComplete::sortByWeight(){
     const auto begin = m_vComp.begin();
     const auto end = m_vComp.end();

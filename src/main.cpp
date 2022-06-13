@@ -13,7 +13,7 @@ int main(int argc, char *argv[]){
         //db.printWordDataBase(true, 40);//exibe a base de palavras(primeiros 40)
 
         AutoComplete ac = AutoComplete(&db);//inicializa a classe AutoComplete com a base de palavras
-        ac.searchPrefix("POR");// procura na base de dados por palavras que iniciem com esse prefixo
+        ac.searchPrefix("SA");// procura na base de dados por palavras que iniciem com esse prefixo
         ac.sortByWeight();
 
         Interface::setAutoComplete(&ac);

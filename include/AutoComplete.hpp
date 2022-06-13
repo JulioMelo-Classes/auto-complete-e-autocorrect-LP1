@@ -47,6 +47,13 @@ class AutoComplete{
         vector<pair< int , string>>::iterator getEnd();
 
         /**
+         * @brief Pega o tamanho do vetor da base de palavras do autocomplete
+         * 
+         * @return size_t Referente ao tamanho do vetor da base autocomplete
+         */
+        size_t getBaseSize();
+
+        /**
          * @brief Ordena a base m_vComp pelo peso (ocorrências) das sentenças (Do maior para o menor)
          */
         void sortByWeight();

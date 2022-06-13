@@ -48,9 +48,17 @@ class Interface{
     /**
      * @brief Imprime as palavras candidatas ao autocomplete e autocorrect com base em vComp e vCor
      * 
-     * @param n Quantidade de palavras que serão impressas (Tanto as do autocomplete quanto as do autocorrect)
+     * @param n Quantidade máxima de linhas que serão impressas (Tanto as do autocomplete quanto as do autocorrect)
      */
     static void printCandidateWords(size_t n);
+
+    /**
+     * @brief Imprime uma linha da tabela de palavras candidatas
+     * 
+     * @param autoCompleteWord Palavra da base de autocomplete 
+     * @param autoCorrectWord Palavra da base de autocorrect
+     */
+    static void printLine(string autoCompleteWord, string autoCorrectWord, size_t lineSize);
 
     /**
      * @brief Imprime o cabeçalho da tabela de saída

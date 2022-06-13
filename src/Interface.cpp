@@ -27,6 +27,12 @@ AutoCorrect* Interface::m_autoCorrect = nullptr;
     const auto endComp = m_autoComplete->getEnd();
     const string header = "Autocomplete";
 
+    if(m_autoComplete->getBaseSize() == 0){ // Se não houver elemento nenhum na base de palavras
+        string msg = "No match found"; // 
+
+        return msg.length(); 
+    }
+
     auto maxPair = std::max_element(beginComp, endComp,[](const auto &p1, const auto &p2)->bool{
         size_t strLen1 = p1.second.length();
         size_t strLen2 = p2.second.length();
@@ -43,22 +49,32 @@ AutoCorrect* Interface::m_autoCorrect = nullptr;
     const string h1 = "Autocomplete";
     const string h2 = "Autocorrect";
 
-    const string spaces = Interface::getSpaceString(lineSize - h1.length());
-
-    std::cout << h1 << spaces << "   | " << h2 << std::endl;
+    Interface::printLine(h1, h2, lineSize);
 }
 
 /*static*/ void Interface::printCandidateWords(size_t n){
     const size_t lineSize = Interface::getLineSize();
-    std::cout << lineSize << std::endl;
+
     auto beginComp = m_autoComplete->getBegin();
     auto endComp = m_autoComplete->getEnd();
 
     Interface::printHeader(lineSize);
-    for(size_t i=0; i < n && beginComp!=endComp; i++, beginComp++){
-        const string word = (*beginComp).second;
-        const string spaces = Interface::getSpaceString(lineSize - word.length());
+    for(size_t i=0; i < n; i++){
+        string autoCompleteWord = (i==0)?"No match found":"";
+        string autoCorrectWord = ""; // Modificar depois
+        
+        if(i < m_autoComplete->getBaseSize()){ // Enquanto ainda tem palavras na base
+            autoCompleteWord = (*beginComp).second;
+            beginComp++;
+        }
+        const string spacesAutoComplete = Interface::getSpaceString(lineSize - autoCompleteWord.length());
 
-        std::cout << word << spaces << "   |" << std::endl;
+        Interface::printLine(autoCompleteWord, autoCorrectWord, lineSize);
     }
+}
+
+/*static*/ void Interface::printLine(string autoCompleteWord, string autoCorrectWord, size_t lineSize){
+    const string autoCompleteSpaces = Interface::getSpaceString(lineSize - autoCompleteWord.length());
+
+    std::cout << autoCompleteWord << autoCompleteSpaces << "   | " << autoCorrectWord <<std::endl;
 }
