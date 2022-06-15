@@ -55,5 +55,9 @@ class WordDataBase{
         void sortBySentenceSyze();
 
 
+        /* temp */
+        void printWordDataBase(bool limiter, size_t limit);
+
+
 };
 #endif
