@@ -73,6 +73,12 @@ void WordDataBase::printWordDataBase(bool limiter, size_t limit)
 	cout << "-----WORDSDATABASE------" << endl;
 	for (size_t i = 0; i < t; i++)
 	{
-		cout << m_base[i].first << " | " << m_base[i].second << endl;
+		cout << i << " - " << m_base[i].first << " | " << m_base[i].second << " - " << m_base[i].second.size() << endl;
 	}
 }
+
+vector<pair<int, string>> &WordDataBase::getBase()
+{
+	return m_base;
+}
+

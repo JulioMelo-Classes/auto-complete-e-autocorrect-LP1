@@ -55,8 +55,20 @@ class WordDataBase{
         void sortBySentenceSyze();
 
 
-        /* temp */
+        /**
+         * @brief imprime a base de dados
+         * 
+         */
         void printWordDataBase(bool limiter, size_t limit);
+
+        /**
+         * @brief funcao get da base
+         * 
+         * * @return referencia da base
+         *
+         */
+        vector<pair<int, string>> &getBase();
+
 
 
 };
