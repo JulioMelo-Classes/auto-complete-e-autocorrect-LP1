@@ -7,6 +7,7 @@
 4. [Implementação e Modelagem](#4-implementação-e-modelagem)
 5. [Saída](#5-saída)
 6. [Validação e Testes](#6-validação-e-testes)
+7. [Como executar o projeto](#7-como-executar-o-projeto)
 
 # 1-Introdução
 
@@ -135,6 +136,38 @@ Neste trabalho o ônus de testar e mostrar as implementações das funcionalidad
 
 Tente variar a base de dados e testar especialmente os algoritmos envolvidos para mostrar que funcionam corretamente e que a saída desejada é a que está sendo
 mostrada no caso de teste.
+
+# 7-Como executar o projeto
+
+Para a compilação do projeto é possível utilizar a ferramenta de compilação **cmake** (Caso não possua o cmake precisará instalá-lo). Assim, siga o conjunto de passos:
+
+Crie a pasta `/build` para manter o projeto organizado quando o **cmake** buildar o projeto. Para isso, execute os comandos de dentro da pasta raiz do projeto:
+
+```bash
+mkdir build/
+cd build/
+cmake ..
+```
+
+Dessa forma, diversos arquivos do cmake serão criados dentro da pasta `/build`. 
+
+Agora execute o seguinte comando, dentro da pasta `/build` para compilar o projeto com o cmake (Os configurações de compilação já estão presentes no arquivo `CMakeLists.txt` no diretório raiz do projeto):
+
+```bash
+cmake --build . 
+```
+
+Agora, um arquivo executável será criado em `/build` com o nome de `words_complete_correct`. Para executar o programa digite o seguinte comando:
+
+```bash
+./words_complete_correct <base_de_palavas>
+```
+
+Em que `<base_de_palavras>` trata-se do caminho para a base de palavras (arquivo .txt) que será utilizada no programa. Dentro do diretório `./data` existem algumas bases de palavras prontas. Veja um exemplo de comando de execução do programa com a base `ptbrcorpus.txt`:
+
+```bash
+./words_complete_correct ../data/ptbrcorpus.txt
+```
 
 
 # Autorship
