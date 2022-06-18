@@ -10,8 +10,7 @@ using namespace std;
 class AutoCorrect{
     private: 
         WordDataBase *m_dbWords; //Base armazenando a quantidade de ocorrências e as palavras
-        vector<pair< int , string>> m_baseComp;
-        vector<pair< int , string>> m_vCorr; // Base armazenando todas entradas da base que iniciam com o prefixo buscado
+        vector<pair< int , string>> m_vCorr;
     public:
 
         /**
@@ -19,7 +18,7 @@ class AutoCorrect{
          * 
          * @param dataBase referência para um banco de palavras
          */
-        AutoCorrect(WordDataBase *dataBase, vector<pair<int, string>>& t_base_);
+        AutoCorrect(WordDataBase *dataBase);
 
         /**
          * @brief calcula a distancia entre duas palavras utilizando o algoritmo de levenshtein

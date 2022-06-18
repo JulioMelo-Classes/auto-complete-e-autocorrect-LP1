@@ -53,7 +53,10 @@ AutoCorrect* Interface::m_autoCorrect = nullptr;
 }
 
 /*static*/ size_t Interface::getNumberOfLines(size_t max){
-    size_t maxBase = m_autoComplete->getBaseSize(); // MODIFICAR DEPOIS QUANDO TIVER O AUTOCORRECT
+    size_t baseComplete = m_autoComplete->getBaseSize();
+    size_t baseCorrect = m_autoCorrect->getBaseSize();
+
+    size_t maxBase = (baseComplete > baseCorrect)? baseComplete: baseCorrect;
 
     maxBase = (maxBase==0)?1: maxBase; // Se não tiver palavras candidatas, reserva um espaço pro "No match found"
 
@@ -67,15 +70,24 @@ AutoCorrect* Interface::m_autoCorrect = nullptr;
     auto beginComp = m_autoComplete->getBegin();
     auto endComp = m_autoComplete->getEnd();
 
+    auto beginCorr = m_autoCorrect->getBegin();
+    auto endCorr = m_autoCorrect->getEnd();
+
     Interface::printHeader(lineSize);
     for(size_t i=0; i < n; i++){
         string autoCompleteWord = (i==0)?"No match found":"";
-        string autoCorrectWord = ""; // Modificar depois
+        string autoCorrectWord = (i==0)?"No match found":"";
         
         if(i < m_autoComplete->getBaseSize()){ // Enquanto ainda tem palavras na base
             autoCompleteWord = (*beginComp).second;
             beginComp++;
         }
+
+        if(i < m_autoCorrect->getBaseSize()){
+            autoCorrectWord = (*beginCorr).second;
+            beginCorr++;
+        }
+
         const string spacesAutoComplete = Interface::getSpaceString(lineSize - autoCompleteWord.length());
 
         Interface::printLine(autoCompleteWord, autoCorrectWord, lineSize);

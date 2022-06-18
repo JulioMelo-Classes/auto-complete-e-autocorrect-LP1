@@ -4,13 +4,13 @@
 #include <iostream>
 using namespace std;
 
-AutoCorrect::AutoCorrect(WordDataBase *dataBase, vector<pair<int, string>> &t_base_)
+AutoCorrect::AutoCorrect(WordDataBase *dataBase)
 {
     m_dbWords = dataBase;
-    m_baseComp = t_base_;
 }
 
 int min(int x, int y, int z) { return min(min(x, y), z); }
+
 void AutoCorrect::wordsWithShortestDistance(string t_word, int t_distanceUp, int t_distanceDown)
 {
     auto toUpperCase = [](const string str)->string{
@@ -44,13 +44,6 @@ void AutoCorrect::wordsWithShortestDistance(string t_word, int t_distanceUp, int
     int low = lowIt - begin;
     int upper = upperIt - begin;
 
-    // for (int it = low; it < upper; it++)
-    // {
-    //     if (AutoCorrect::levenshteinDistance(m_baseComp[it].second, t_word, m_baseComp[it].second.size(), t_word.size()) < 6)
-    //     {
-    //         m_vCorr.push_back(m_baseComp[it]);
-    //     }
-    // }
     for(auto it = lowIt; it < upperIt; it++){
         if (AutoCorrect::levenshteinDistance((*it).second, t_word, (*it).second.size(), t_word.size()) < 6)
         {
@@ -81,6 +74,12 @@ int AutoCorrect::levenshteinDistance(string t_valA, string t_valB, int t_sizeA, 
     }
     return dp[t_sizeA][t_sizeB];
 }
+
+vector<pair< int , string>>::iterator AutoCorrect::getBegin(){return m_vCorr.begin();};
+
+vector<pair< int , string>>::iterator AutoCorrect::getEnd(){return m_vCorr.end();};
+
+size_t AutoCorrect::getBaseSize(){return m_vCorr.size();};
 
 void AutoCorrect::printAutoCorrectBase(bool t_limiter, size_t t_limit)
 {
