@@ -6,8 +6,8 @@
 3. [Interface](#3-interface)
 4. [Implementação e Modelagem](#4-implementação-e-modelagem)
 5. [Saída](#5-saída)
-6. [Validação e Testes](#6-validação-e-testes)
-7. [Como executar o projeto](#7-como-executar-o-projeto)
+6. [Como executar o projeto](#6-como-executar-o-projeto)
+7. [Validação e Testes](#7-validação-e-testes)
 
 # 1-Introdução
 
@@ -130,15 +130,7 @@ sao pedro da cova, brazil     | sai
 
 Note que o programa não deve ser **case sensitive**. Ou seja, não deve fazer diferença se o usuário digita "Sao", "sao", "SAO",  ou qualquer variação de maiúscula ou minúscula. A entrada do usuário deve ser convertida para um case qualquer (todas maiúsculas ou todas minúsculas), para facilitar a operação de busca na base de dados.
 
-# 6-Validação e testes
-
-Neste trabalho o ônus de testar e mostrar as implementações das funcionalidades é totalmente seu! Invista em criar testes e em automatizar o processo de testes uma vez que você irá precisar demonstrar a implementação do caso de uso básico, casos de erro e as funcionalidades.
-
-Tente variar a base de dados e testar especialmente os algoritmos envolvidos para mostrar que funcionam corretamente e que a saída desejada é a que está sendo
-mostrada no caso de teste.
-
-# 7-Como executar o projeto
-
+# 6-Como executar o projeto
 Para a compilação do projeto é possível utilizar a ferramenta de compilação **cmake** (Caso não possua o cmake precisará instalá-lo). Assim, siga o conjunto de passos:
 
 Crie a pasta `/build` para manter o projeto organizado quando o **cmake** buildar o projeto. Para isso, execute os comandos de dentro da pasta raiz do projeto:
@@ -169,6 +161,97 @@ Em que `<base_de_palavras>` trata-se do caminho para a base de palavras (arquivo
 ./words_complete_correct ../data/ptbrcorpus.txt
 ```
 
+# 7-Validação e testes
+## 7-1 Execução do teste
+
+Para a execução de testes sem a necessidade de digitar as entradas manualmente, foram criados o arquivo ``test.txt`` dentro do diretório raiz do projeto `/tests`. Logo, o arquivo de teste se encontra em `./tests/test.txt`. 
+
+Nesse arquivo, se encontra o seguinte conteúdo:
+
+```bash
+cor
+car
+amo
+bra
+```
+
+O que faremos é inserir o conteúdo desse arquivo na entrada do sistema (O que seria equivalente a digitar cada uma dessas palavras quando o programa pedisse a entrada). Para isso, execute o seguinte comando dentro da pasta `build` para iniciar a validação:
+
+```bash
+./words_complete_correct ../data/ptbrcorpus.txt < ../tests/test.txt
+```
+
+> **OBS**: A base de palavras utilizada no exemplo foi a do arquivo ptbrcorpus.txt.
+
+Assim serão geradas 4 tabelas de saída contendo as palavras Matches, uma para cada sentença "digitada" (Que nesse caso são: "cor", "car", "amo" e "bra").
+
+## 7-2 Saída esperada
+
+Como mencionado anteriormente, serão geradas 4 tabelas com as palavras Matches. Dessa forma, as saídas esperadas para cada sentença são:
+
+* Sentença "cor"
+
+  ```bash
+  Autocomplete      | Autocorrect
+  CORPO             | CORPO
+  CORTE             | CORTE
+  CORRENTE          | CALOR
+  CORRELACAO        | CORES
+  CORINTHIANS       | COBRE
+  CORRESPONDE       | COMER
+  CORACAO           | LO
+  CORRECAO          | CORRE
+  CORPORAL          | ROM
+  CORPOS            | VOZ
+  ```
+
+* Sentença "car":
+
+  ```bash
+  Autocomplete       | Autocorrect
+  CARLOS             | FICAR
+  CARACTERISTICAS    | CRIAR
+  CARATER            | CLARO
+  CARDOSO            | CARGA
+  CARGA              | CARRO
+  CARRO              | CARGO
+  CARVALHO           | CARTA
+  CARGO              | CEARA
+  CARREIRA           | CESAR
+  CARACTERISTICA     | CARNE
+  ```
+
+* Sentença "amo":
+
+  ```bash
+  Autocomplete   | Autocorrect
+  AMOSTRAS       | CAMPO
+  AMOSTRA        | AMBOS
+  AMONG          | VAMOS
+  AMOSTRAGEM     | AMIGO
+  AMORIM         | AMPLO
+                 | AMONG
+                 | RAMOS
+                 | LO
+                 | AMARO
+                 | CARMO
+  ```
+
+* Sentença "bra":
+
+  ```bash
+  Autocomplete   | Autocorrect
+  BRASIL         | OBRAS
+  BRASILEIRA     | OBRA
+  BRASILEIRO     | FIBRA
+  BRASILIA       | BRACO
+  BRASILEIROS    | BARRA
+  BRASILEIRAS    | BRUTA
+  BRAZIL         | DIA
+  BRANCO         | BARAO
+  BRANCOS        | BRAGA
+  BRANCA         | BRIGA
+  ```
 
 # Autorship
 
