@@ -63,7 +63,7 @@ AutoCorrect* Interface::m_autoCorrect = nullptr;
     return (maxBase < max)? maxBase: max;
 }
 
-/*static*/ void Interface::printCandidateWords(size_t n){
+/*static*/ void Interface::printCandidateWords(size_t n, string message){
     const size_t lineSize = Interface::getLineSize();
     n = Interface::getNumberOfLines(n);
 
@@ -73,6 +73,7 @@ AutoCorrect* Interface::m_autoCorrect = nullptr;
     auto beginCorr = m_autoCorrect->getBegin();
     auto endCorr = m_autoCorrect->getEnd();
 
+    std::cout << message << std::endl;
     Interface::printHeader(lineSize);
     for(size_t i=0; i < n; i++){
         string autoCompleteWord = (i==0)?"No match found":"";
@@ -98,4 +99,13 @@ AutoCorrect* Interface::m_autoCorrect = nullptr;
     const string autoCompleteSpaces = Interface::getSpaceString(lineSize - autoCompleteWord.length());
 
     std::cout << autoCompleteWord << autoCompleteSpaces << "   | " << autoCorrectWord <<std::endl;
+}
+
+/*static*/ pair<string, bool> Interface::readSentence(string message){
+    pair<string, bool> par = make_pair("", false);
+
+    std::cout << message;
+    par.second = getline(cin, par.first) && !cin.eof();
+
+    return par;
 }

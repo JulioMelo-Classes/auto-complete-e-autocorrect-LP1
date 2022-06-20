@@ -49,8 +49,9 @@ class Interface{
      * @brief Imprime as palavras candidatas ao autocomplete e autocorrect com base em vComp e vCor
      * 
      * @param n Quantidade máxima de linhas que serão impressas (Tanto as do autocomplete quanto as do autocorrect)
+     * @param message Mensagem a ser impressa antes da tabela de palavras candidatas
      */
-    static void printCandidateWords(size_t n);
+    static void printCandidateWords(size_t n, string message);
 
     /**
      * @brief Imprime uma linha da tabela de palavras candidatas
@@ -74,6 +75,14 @@ class Interface{
      * @param lineSize Tamanho da linha do auto complete
      */
     static void printHeader(size_t lineSize);
+
+    /**
+     * @brief Ler a sentença digitada pelo usuário
+     * 
+     * @param message Mensagem que será mostrada ao usuário no momento da leitura da sentença
+     * @return Um pair<string,bool> em que o o first é a sentença lida e o bool é se o usuário digitou CTRL + D para parar a leitura
+     */
+    static pair<string, bool> readSentence(string message);
 
 };
 #endif
