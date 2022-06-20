@@ -11,28 +11,38 @@ int main(int argc, char *argv[])
     {
         const std::string path_file = argv[1];
 
-        WordDataBase db = WordDataBase(path_file);
+        WordDataBase dbComp = WordDataBase(path_file); // Cria banco de palavras para o autocomplete
+        WordDataBase dbCorr = WordDataBase(path_file); // Cria banco de palavras para o autocorrect
 
-        while (true)
-        {
-            cout << "Digite uma sentença" << endl;
-            string n;
-            getline (std::cin,name);
-            AutoCorrect acorr = AutoCorrect(&db); // inicializa a classe AutoCorrect com a base de palavras
-            AutoComplete acomp = AutoComplete(&db); // inicializa a classe AutoComplete com a base de palavras
+        AutoComplete acomp = AutoComplete(&dbComp); // inicializa a classe AutoComplete com a base de palavras
+        dbComp.sortAlphabetically();
 
-            db.sortAlphabetically();
-            acomp.searchPrefix(n); // procura na base de dados por palavras que iniciem com esse prefixo
+        AutoCorrect acorr = AutoCorrect(&dbCorr); // inicializa a classe AutoCorrect com a base de palavras
+        dbCorr.sortBySentenceSyze();
+
+
+        Interface::setAutoComplete(&acomp);
+        Interface::setAutoCorrect(&acorr);
+ 
+        string inputMessage = "Digite uma palavra, ou parte dela e digite Enter, o pressione Ctrl + d pra terminar: ";
+        
+        auto pairSentence = Interface::readSentence(inputMessage);
+
+        while(pairSentence.second){
+            acomp.clearVComp();
+            acorr.clearVCorr();
+
+            const string sentence = pairSentence.first;
+
+            acomp.searchPrefix(sentence); // procura na base de dados por palavras que iniciem com esse prefixo
             acomp.sortByWeight();     // Ordena o vetor de palavras candidatas ao autocomplete pelo peso
 
-            db.sortBySentenceSyze();
-            acorr.wordsWithShortestDistance(n, 2, 2, 3); // procura na base de dados por palavras para o autocorrect
+            acorr.wordsWithShortestDistance(sentence, 2, 2, 3); // procura na base de dados por palavras para o autocorrect
             acorr.sortByWeight(); // Ordena o vetor de palavras candidatas ao autocorrect pelo peso
 
-            Interface::setAutoComplete(&acomp);
-            Interface::setAutoCorrect(&acorr);
+            Interface::printCandidateWords(10, "Matches são");
 
-            Interface::printCandidateWords(10);
+            pairSentence = Interface::readSentence(inputMessage);
         }
     }
     else

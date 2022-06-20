@@ -61,6 +61,11 @@ class AutoCorrect{
         size_t getBaseSize();
 
         /**
+         * @brief Limpa a base vCorr removendo todos os elementos
+         */
+        void clearVCorr();
+
+        /**
          * @brief Ordena a base m_vCorr pelo peso (ocorrências) das sentenças (Do maior para o menor)
          */
         void sortByWeight();

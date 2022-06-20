@@ -81,6 +81,8 @@ vector<pair< int , string>>::iterator AutoCorrect::getEnd(){return m_vCorr.end()
 
 size_t AutoCorrect::getBaseSize(){return m_vCorr.size();};
 
+void AutoCorrect::clearVCorr(){m_vCorr.clear();};
+
 void AutoCorrect::printAutoCorrectBase(bool t_limiter, size_t t_limit)
 {
     size_t t = (t_limit > 0) ? t_limit : 0;
