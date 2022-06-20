@@ -13,21 +13,27 @@ int main(int argc, char *argv[])
 
         WordDataBase db = WordDataBase(path_file);
 
-        db.sortAlphabetically();
-        AutoComplete acomp = AutoComplete(&db); // inicializa a classe AutoComplete com a base de palavras
-        acomp.searchPrefix("AB"); // procura na base de dados por palavras que iniciem com esse prefixo
-        acomp.sortByWeight();     // Ordena o vetor de palavras candidatas ao autocomplete pelo peso
+        while (true)
+        {
+            cout << "Digite uma sentença" << endl;
+            string n;
+            getline (std::cin,name);
+            AutoCorrect acorr = AutoCorrect(&db); // inicializa a classe AutoCorrect com a base de palavras
+            AutoComplete acomp = AutoComplete(&db); // inicializa a classe AutoComplete com a base de palavras
 
-        db.sortBySentenceSyze();
-        AutoCorrect acorr = AutoCorrect(&db); // inicializa a classe AutoCorrect com a base de palavras
+            db.sortAlphabetically();
+            acomp.searchPrefix(n); // procura na base de dados por palavras que iniciem com esse prefixo
+            acomp.sortByWeight();     // Ordena o vetor de palavras candidatas ao autocomplete pelo peso
 
-        string n = "AB";
-        acorr.wordsWithShortestDistance(n, 2, 2);
+            db.sortBySentenceSyze();
+            acorr.wordsWithShortestDistance(n, 2, 2, 3); // procura na base de dados por palavras para o autocorrect
+            acorr.sortByWeight(); // Ordena o vetor de palavras candidatas ao autocorrect pelo peso
 
-        Interface::setAutoComplete(&acomp);
-        Interface::setAutoCorrect(&acorr);
+            Interface::setAutoComplete(&acomp);
+            Interface::setAutoCorrect(&acorr);
 
-        Interface::printCandidateWords(10);
+            Interface::printCandidateWords(10);
+        }
     }
     else
     {

@@ -11,7 +11,7 @@ AutoCorrect::AutoCorrect(WordDataBase *dataBase)
 
 int min(int x, int y, int z) { return min(min(x, y), z); }
 
-void AutoCorrect::wordsWithShortestDistance(string t_word, int t_distanceUp, int t_distanceDown)
+void AutoCorrect::wordsWithShortestDistance(string t_word, int t_distanceUp, int t_distanceDown, int t_distanceGap)
 {
     auto toUpperCase = [](const string str)->string{
         string uper = str;
@@ -45,7 +45,7 @@ void AutoCorrect::wordsWithShortestDistance(string t_word, int t_distanceUp, int
     int upper = upperIt - begin;
 
     for(auto it = lowIt; it < upperIt; it++){
-        if (AutoCorrect::levenshteinDistance((*it).second, t_word, (*it).second.size(), t_word.size()) < 6)
+        if (AutoCorrect::levenshteinDistance((*it).second, t_word, (*it).second.size(), t_word.size()) < t_distanceGap)//Distancia aceitavel
         {
             m_vCorr.push_back(*it);
         }
@@ -97,4 +97,12 @@ void AutoCorrect::printAutoCorrectBase(bool t_limiter, size_t t_limit)
     {
         cout << i << " - " << m_vCorr[i].second << " - " << m_vCorr[i].second.size() << endl;
     }
+}
+
+void AutoCorrect::sortByWeight(){
+    const auto begin = m_vCorr.begin();
+    const auto end = m_vCorr.end();
+    sort(begin, end, [](const auto p1, const auto p2)->bool{
+        return p1.first > p2.first;
+    });
 }
