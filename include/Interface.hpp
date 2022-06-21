@@ -80,7 +80,7 @@ class Interface{
      * @brief Ler a sentença digitada pelo usuário
      * 
      * @param message Mensagem que será mostrada ao usuário no momento da leitura da sentença
-     * @return Um pair<string,bool> em que o o first é a sentença lida e o bool é se o usuário digitou CTRL + D para parar a leitura
+     * @return Um pair<string,bool> em que o o first é a sentença lida e o second é se o usuário digitou CTRL + D para parar a leitura
      */
     static pair<string, bool> readSentence(string message);
 

@@ -17,7 +17,6 @@ WordDataBase::WordDataBase(string filePath)
 	string palavra;
 	bool swap = true;
 	string frase;
-	int count = 0;
 
 	while (getline(palavrasfile, frase))
 	{
@@ -75,10 +74,5 @@ void WordDataBase::printWordDataBase(bool limiter, size_t limit)
 	{
 		cout << i << " - " << m_base[i].first << " | " << m_base[i].second << " - " << m_base[i].second.size() << endl;
 	}
-}
-
-vector<pair<int, string>> &WordDataBase::getBase()
-{
-	return m_base;
 }
 

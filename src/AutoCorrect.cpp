@@ -41,9 +41,6 @@ void AutoCorrect::wordsWithShortestDistance(string t_word, int t_distanceUp, int
     auto lowIt = lower_bound(begin, end, make_pair(0, t_word), funcLower);
     auto upperIt = upper_bound(begin, end, make_pair(0, t_word), funcUpper);
 
-    int low = lowIt - begin;
-    int upper = upperIt - begin;
-
     for(auto it = lowIt; it < upperIt; it++){
         if (AutoCorrect::levenshteinDistance((*it).second, t_word, (*it).second.size(), t_word.size()) < t_distanceGap)//Distancia aceitavel
         {
@@ -104,6 +101,7 @@ void AutoCorrect::printAutoCorrectBase(bool t_limiter, size_t t_limit)
 void AutoCorrect::sortByWeight(){
     const auto begin = m_vCorr.begin();
     const auto end = m_vCorr.end();
+    
     sort(begin, end, [](const auto p1, const auto p2)->bool{
         return p1.first > p2.first;
     });

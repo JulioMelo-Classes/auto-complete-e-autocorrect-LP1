@@ -20,18 +20,10 @@ class WordDataBase{
          */
         WordDataBase(string filePath);
 
-        // /**
-        //  * @brief funcao get de t_base como referência
-        //  * 
-        //  * @return referencia de m_base
-        //  * 
-        //  */
-        // vector<pair<int, string>>& getBase();
-
         /**
          * @brief Pegar o iterator do começo da base de palavras
          * 
-         * @return O iterator que referencía o começo (begin) da base de palavras
+         * @return O iterator que referencia o começo (begin) da base de palavras
          */
         vector<pair< int , string>>::iterator getBeginBase();
 
@@ -60,16 +52,6 @@ class WordDataBase{
          * 
          */
         void printWordDataBase(bool limiter, size_t limit);
-
-        /**
-         * @brief funcao get da base
-         * 
-         * * @return referencia da base
-         *
-         */
-        vector<pair<int, string>> &getBase();
-
-
 
 };
 #endif

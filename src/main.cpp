@@ -20,15 +20,15 @@ int main(int argc, char *argv[])
         AutoCorrect acorr = AutoCorrect(&dbCorr); // inicializa a classe AutoCorrect com a base de palavras
         dbCorr.sortBySentenceSyze();
 
-
+        // Configura o autocomplete e o autocorrect que serão usados na impressão da saída
         Interface::setAutoComplete(&acomp);
         Interface::setAutoCorrect(&acorr);
  
-        string inputMessage = "Digite uma palavra, ou parte dela e digite Enter, o pressione Ctrl + d pra terminar: ";
+        const string inputMessage = "Digite uma palavra, ou parte dela e digite Enter, o pressione Ctrl + d pra terminar: ";
         
         auto pairSentence = Interface::readSentence(inputMessage);
 
-        while(pairSentence.second){
+        while(pairSentence.second){ // Enquanto o usuário não digitou CTRL + D
             acomp.clearVComp();
             acorr.clearVCorr();
 
