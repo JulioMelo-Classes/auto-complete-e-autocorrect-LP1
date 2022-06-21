@@ -62,17 +62,3 @@ void WordDataBase::sortBySentenceSyze()
 			  { return p1.second.length() < p2.second.length(); });
 }
 
-void WordDataBase::printWordDataBase(bool limiter, size_t limit)
-{
-	size_t t = (limit > 0) ? limit : 0;
-	if (!limiter)
-	{
-		t = m_base.size();
-	}
-	cout << "-----WORDSDATABASE------" << endl;
-	for (size_t i = 0; i < t; i++)
-	{
-		cout << i << " - " << m_base[i].first << " | " << m_base[i].second << " - " << m_base[i].second.size() << endl;
-	}
-}
-

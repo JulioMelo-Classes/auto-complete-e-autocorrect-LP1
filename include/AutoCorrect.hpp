@@ -69,13 +69,5 @@ class AutoCorrect{
          * @brief Ordena a base m_vCorr pelo peso (ocorrências) das sentenças (Do maior para o menor)
          */
         void sortByWeight();
-
-        /**
-         * @brief Imprime a base de m_vCorr
-         * 
-         * @param limiter Um booleano que representa se a busca vai ser limitada à um número específico ou não
-         * @param limit Um número que corresponde ao limite de palavras que serão mostradas (Se o limiter for false esse parâmetro
-         */
-        void printAutoCorrectBase(bool t_limiter,size_t t_limit);
 };
 #endif

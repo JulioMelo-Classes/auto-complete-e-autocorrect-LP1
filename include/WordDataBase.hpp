@@ -45,13 +45,6 @@ class WordDataBase{
          * 
          */
         void sortBySentenceSyze();
-
-
-        /**
-         * @brief imprime a base de dados
-         * 
-         */
-        void printWordDataBase(bool limiter, size_t limit);
-
+    
 };
 #endif

@@ -80,24 +80,6 @@ size_t AutoCorrect::getBaseSize(){return m_vCorr.size();};
 
 void AutoCorrect::clearVCorr(){m_vCorr.clear();};
 
-void AutoCorrect::printAutoCorrectBase(bool t_limiter, size_t t_limit)
-{
-    size_t t = (t_limit > 0) ? t_limit : 0;
-    if (!t_limiter)
-    {
-        t = m_vCorr.size();
-    }
-    if (m_vCorr.empty())
-    {
-        return;
-    }
-    cout << "-----AUTOCOMPLETE------" << endl;
-    for (size_t i = 0; i < t; i++)
-    {
-        cout << i << " - " << m_vCorr[i].second << " - " << m_vCorr[i].second.size() << endl;
-    }
-}
-
 void AutoCorrect::sortByWeight(){
     const auto begin = m_vCorr.begin();
     const auto end = m_vCorr.end();
