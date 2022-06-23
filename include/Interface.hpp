@@ -48,10 +48,11 @@ class Interface{
     /**
      * @brief Imprime as palavras candidatas ao autocomplete e autocorrect com base em vComp e vCor
      * 
+     * @param limited Se a impressão vai ser limitada ou se vai ser impressa a base toda do autocomplete e autocorrect.
      * @param n Quantidade máxima de linhas que serão impressas (Tanto as do autocomplete quanto as do autocorrect)
      * @param message Mensagem a ser impressa antes da tabela de palavras candidatas
      */
-    static void printCandidateWords(size_t n, string message);
+    static void printCandidateWords(bool limited, size_t n, string message);
 
     /**
      * @brief Imprime uma linha da tabela de palavras candidatas
@@ -64,10 +65,11 @@ class Interface{
     /**
      * @brief Calcula o número de linhas que a tabela de palavras candidatas deve ter apartir do vComp e vCorr
      * 
-     * @param max Número máximo de linhas que a tabela deve ter
+     * @param limited Se a quantidade de linha da tabela foi limitada ou não
+     * @param max Número máximo de linhas que a tabela deve ter (Se ela foi limitada)
      * @return size_t referente ao número de linhas que a tabela deve possuir
      */
-    static size_t getNumberOfLines(size_t max);
+    static size_t getNumberOfLines(bool limited, size_t max);
 
     /**
      * @brief Imprime o cabeçalho da tabela de saída

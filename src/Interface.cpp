@@ -52,7 +52,7 @@ AutoCorrect* Interface::m_autoCorrect = nullptr;
     Interface::printLine(h1, h2, lineSize);
 }
 
-/*static*/ size_t Interface::getNumberOfLines(size_t max){
+/*static*/ size_t Interface::getNumberOfLines(bool limited, size_t max){
     size_t baseComplete = m_autoComplete->getBaseSize();
     size_t baseCorrect = m_autoCorrect->getBaseSize();
 
@@ -60,12 +60,14 @@ AutoCorrect* Interface::m_autoCorrect = nullptr;
 
     maxBase = (maxBase==0)?1: maxBase; // Se não tiver palavras candidatas, reserva um espaço pro "No match found"
 
+    if(!limited) return maxBase;
+    
     return (maxBase < max)? maxBase: max;
 }
 
-/*static*/ void Interface::printCandidateWords(size_t n, string message){
+/*static*/ void Interface::printCandidateWords(bool limited, size_t n, string message){
     const size_t lineSize = Interface::getLineSize();
-    n = Interface::getNumberOfLines(n);
+    n = Interface::getNumberOfLines(limited, n);
 
     auto beginComp = m_autoComplete->getBegin();
     auto endComp = m_autoComplete->getEnd();
