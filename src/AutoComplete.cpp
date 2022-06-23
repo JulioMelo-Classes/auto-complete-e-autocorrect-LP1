@@ -36,7 +36,7 @@ void AutoComplete::searchPrefix(string t_val){
         string prefix = str.second.substr(0, sentence.second.length());
         string uper = toUpperCase(prefix);
         
-        return sentence.second < prefix;
+        return sentence.second < uper;
     };
 
     auto begin = m_dbWords->getBeginBase(); // Inicia begin com o começo da base de palavras

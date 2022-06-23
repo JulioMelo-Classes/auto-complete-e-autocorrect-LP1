@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
         Interface::setAutoComplete(&acomp);
         Interface::setAutoCorrect(&acorr);
  
-        const string inputMessage = "Digite uma palavra, ou parte dela e digite Enter, o pressione Ctrl + d pra terminar: ";
+        const string inputMessage = "Digite uma palavra, ou parte dela, e digite Enter ou pressione Ctrl + d pra terminar: ";
         
         auto pairSentence = Interface::readSentence(inputMessage);
 
