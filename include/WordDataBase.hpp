@@ -35,6 +35,14 @@ class WordDataBase{
         vector<pair< int , string>>::iterator getEndBase();
 
         /**
+         * @brief Retorna um recorte do banco com todas as palavras que iniciam com uma determinada sentença
+         * 
+         * @param sentence Sentença a ser buscada
+         * @return Um std::pair de iterators em que o primeiro elemento corresponde ao início do recorte e o segundo corresponde ao fim do recorte
+         */
+        pair<vector<pair< int , string>>::iterator, vector<pair< int , string>>::iterator> startsWith(string sentence);
+
+        /**
          * @brief Ordena a base pela ordem alfabética das palavras
          * 
          */
