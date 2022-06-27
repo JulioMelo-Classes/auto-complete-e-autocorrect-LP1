@@ -40,7 +40,15 @@ class WordDataBase{
          * @param sentence Sentença a ser buscada
          * @return Um std::pair de iterators em que o primeiro elemento corresponde ao início do recorte e o segundo corresponde ao fim do recorte
          */
-        pair<vector<pair< int , string>>::iterator, vector<pair< int , string>>::iterator> startsWith(string sentence);
+        pair<vector<pair< int , string>>::iterator, vector<pair< int , string>>::iterator> startsWith(string t_sentence);
+
+        /**
+         * @brief Retorna um recorte do banco com todas as palavras que possuam o tamanho igual ou maior q sentence
+         * 
+         * @param sentence sentenca a ter o tamanho comparado
+         * @return Um std::pair de iterators em que o primeiro elemento corresponde ao início do recorte e o segundo corresponde ao fim do recorte
+         */
+        pair<vector<pair< int , string>>::iterator, vector<pair< int , string>>::iterator> withSizeOf(string t_sentence);
 
         /**
          * @brief Ordena a base pela ordem alfabética das palavras

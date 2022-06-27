@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
+
 using namespace std;
 
 AutoCorrect::AutoCorrect(WordDataBase *dataBase)
@@ -9,10 +10,7 @@ AutoCorrect::AutoCorrect(WordDataBase *dataBase)
     m_dbWords = dataBase;
 }
 
-int min(int x, int y, int z) { return min(min(x, y), z); }
-
-void AutoCorrect::wordsWithShortestDistance(string t_word, int t_distanceUp, int t_distanceDown, int t_distanceGap)
-{
+void AutoCorrect::wordsWithShortestDistance(string t_word, int t_distanceUp, int t_distanceDown, int t_distanceGap){
     auto toUpperCase = [](const string str)->string{
         string uper = str;
 
@@ -25,30 +23,21 @@ void AutoCorrect::wordsWithShortestDistance(string t_word, int t_distanceUp, int
 
     t_word = toUpperCase(t_word);
 
-    auto funcLower = [&](pair<int, string> str, pair<int, string> sentence)
-    {
-        return str.second.length() <= sentence.second.length() - 1 - t_distanceDown;
-    };
+    const auto iteratorsAutoCorrect = m_dbWords->withSizeOf(t_word); 
+    const auto begin2 = iteratorsAutoCorrect.first;
+    const auto end2 = iteratorsAutoCorrect.second;
 
-    auto funcUpper = [&](pair<int, string> sentence, pair<int, string> str)
-    {
-        return sentence.second.size() + t_distanceUp < str.second.size();
-    };
-
-    auto begin = m_dbWords->getBeginBase(); // Inicia begin com o começo da base de palavras
-    auto end = m_dbWords->getEndBase();     // Inicia end com o final da base de palavras
-
-    auto lowIt = lower_bound(begin, end, make_pair(0, t_word), funcLower);
-    auto upperIt = upper_bound(begin, end, make_pair(0, t_word), funcUpper);
-
-    for(auto it = lowIt; it < upperIt; it++){
-        if (AutoCorrect::levenshteinDistance((*it).second, t_word, (*it).second.size(), t_word.size()) < t_distanceGap)//Distancia aceitavel
+    for(auto it = begin2; it < end2; it++){
+        //if (AutoCorrect::levenshteinDistance((*it).second, t_word, (*it).second.size(), t_word.size()) < t_distanceGap) //Distancia aceitavel
+        if (true) //Distancia aceitavel
         {
+            //cout << (*it).second << " - teste - " << (*it).first << endl;
             m_vCorr.push_back(*it);
         }
     }
 }
 
+int min(int x, int y, int z) { return min(min(x, y), z); }
 
 int AutoCorrect::levenshteinDistance(string t_valA, string t_valB, int t_sizeA, int t_sizeB)
 {
