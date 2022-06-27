@@ -52,10 +52,6 @@ void AutoCorrect::wordsWithShortestDistance(string t_word, int t_distanceUp, int
             }
         }
     }
-    
-//!    AutoCorrect::levenshteinDistance(p1.second, t_word, p1.second.size(), t_word.size()) > AutoCorrect::levenshteinDistance(p2.second, t_word, p2.second.size(), t_word.size())
-
-
 
 
 }

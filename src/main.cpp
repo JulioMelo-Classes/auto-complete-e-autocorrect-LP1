@@ -38,7 +38,6 @@ int main(int argc, char *argv[])
             acomp.sortByWeight();     // Ordena o vetor de palavras candidatas ao autocomplete pelo peso
 
             acorr.wordsWithShortestDistance(sentence, 2, 2, 3); // procura na base de dados por palavras para o autocorrect
-            acorr.sortByWeight(); // Ordena o vetor de palavras candidatas ao autocorrect pelo peso
 
             Interface::printCandidateWords(true, 10, "Matches são");
 
