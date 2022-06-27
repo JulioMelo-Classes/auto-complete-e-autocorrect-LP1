@@ -24,17 +24,40 @@ void AutoCorrect::wordsWithShortestDistance(string t_word, int t_distanceUp, int
     t_word = toUpperCase(t_word);
 
     const auto iteratorsAutoCorrect = m_dbWords->withSizeOf(t_word); 
-    const auto begin2 = iteratorsAutoCorrect.first;
-    const auto end2 = iteratorsAutoCorrect.second;
+    const auto begin = iteratorsAutoCorrect.first;
+    const auto end = iteratorsAutoCorrect.second;
 
-    for(auto it = begin2; it < end2; it++){
-        //if (AutoCorrect::levenshteinDistance((*it).second, t_word, (*it).second.size(), t_word.size()) < t_distanceGap) //Distancia aceitavel
-        if (true) //Distancia aceitavel
+    vector<pair< int , string>> m_vCorrTemp;
+
+    for (auto it = begin; it < end; it++)
+    {
+        if (AutoCorrect::levenshteinDistance((*it).second, t_word, (*it).second.size(), t_word.size()) < t_distanceGap) //Distancia aceitavel
         {
-            //cout << (*it).second << " - teste - " << (*it).first << endl;
-            m_vCorr.push_back(*it);
+            m_vCorrTemp.push_back(*it);
         }
     }
+
+    sort(m_vCorrTemp.begin(), m_vCorrTemp.end(), [](const auto p1, const auto p2) -> bool
+         { return p1.first > p2.first; });
+
+
+
+    for (size_t j = 0; j < t_distanceGap; j++)
+    {
+        for (size_t i = 0; i < m_vCorrTemp.size(); i++)
+        {
+            if (AutoCorrect::levenshteinDistance(m_vCorrTemp[i].second, t_word, m_vCorrTemp[i].second.size(), t_word.size()) == j) //Distancia aceitavel
+            {
+                m_vCorr.push_back(m_vCorrTemp[i]);
+            }
+        }
+    }
+    
+//!    AutoCorrect::levenshteinDistance(p1.second, t_word, p1.second.size(), t_word.size()) > AutoCorrect::levenshteinDistance(p2.second, t_word, p2.second.size(), t_word.size())
+
+
+
+
 }
 
 int min(int x, int y, int z) { return min(min(x, y), z); }
