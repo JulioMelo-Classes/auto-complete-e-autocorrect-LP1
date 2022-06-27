@@ -47,6 +47,13 @@ class AutoComplete{
         vector<pair< int , string>>::iterator getEnd();
 
         /**
+         * @brief Procura o par cuja sentença é a maior de todas (Em quantidade de letras)
+         * 
+         * @return pair<int, string> Com o par da maior sentença da base
+         */
+        pair<int, string> getBiggestSentence();
+
+        /**
          * @brief Pega o tamanho do vetor da base de palavras do autocomplete
          * 
          * @return size_t Referente ao tamanho do vetor da base autocomplete

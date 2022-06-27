@@ -23,8 +23,6 @@ AutoCorrect* Interface::m_autoCorrect = nullptr;
 }
 
 /*static*/ size_t Interface::getLineSize(){
-    const auto beginComp = m_autoComplete->getBegin();
-    const auto endComp = m_autoComplete->getEnd();
     const string header = "Autocomplete";
 
     if(m_autoComplete->getBaseSize() == 0){ // Se não houver elemento nenhum na base de palavras
@@ -33,14 +31,9 @@ AutoCorrect* Interface::m_autoCorrect = nullptr;
         return msg.length(); 
     }
 
-    auto maxPair = std::max_element(beginComp, endComp,[](const auto &p1, const auto &p2)->bool{
-        size_t strLen1 = p1.second.length();
-        size_t strLen2 = p2.second.length();
+    const auto maxPair = m_autoComplete->getBiggestSentence();
 
-        return strLen1 < strLen2;
-    });
-
-    size_t maxSize = ((*maxPair).second.length() > header.length())? (*maxPair).second.length(): header.length();
+    size_t maxSize = (maxPair.second.length() > header.length())? maxPair.second.length(): header.length();
 
     return maxSize;
 }

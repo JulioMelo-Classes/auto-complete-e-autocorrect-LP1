@@ -43,6 +43,20 @@ vector<pair<int, string>>::iterator AutoComplete::getEnd(){return m_vComp.end();
 
 size_t AutoComplete::getBaseSize(){return m_vComp.size();};
 
+pair<int, string> AutoComplete::getBiggestSentence(){
+    const auto begin = m_vComp.begin();
+    const auto end = m_vComp.end();
+
+    auto maxPair = std::max_element(begin, end,[](const auto &p1, const auto &p2)->bool{
+        size_t strLen1 = p1.second.length();
+        size_t strLen2 = p2.second.length();
+
+        return strLen1 < strLen2;
+    });
+
+    return (*maxPair);
+}
+
 void AutoComplete::sortByWeight(){
     const auto begin = m_vComp.begin();
     const auto end = m_vComp.end();

@@ -269,7 +269,7 @@
 1198129	Depok, Indonesia
 1197816	Dallas, Texas, United States
 1193350	Saitama, Japan
-1193161	Gustavo A. Madero, Distrito Federal, Mexico
+1193161	Gustavo A Madero, Distrito Federal, Mexico
 1193000	Dombivli, India
 1191613	Maputo, Mozambique
 1179720	Fuzhou, China
@@ -2876,7 +2876,7 @@
 139159	Kariya, Japan
 139100	Choloma, Honduras
 139052	Stockport, United Kingdom
-139049	Budapest XI. kerulet, Hungary
+139049	Budapest XI kerulet, Hungary
 139047	Huadian, China
 139004	Weru, Indonesia
 139001	Brighton, United Kingdom
@@ -3020,7 +3020,7 @@
 132224	Zalantun, China
 132218	Pindamonhangaba, Brazil
 132094	Muricay, Philippines
-131989	St. Catharines, Ontario, Canada
+131989	St Catharines, Ontario, Canada
 131974	Omuta, Japan
 131913	Godhra, India
 131889	Shahrud, Iran
@@ -3265,7 +3265,7 @@
 123787	Salvaleon de Higuey, Dominican Republic
 123749	Polokwane, South Africa
 123727	Thaton, Myanmar
-123723	Budapest III. kerulet, Hungary
+123723	Budapest III kerulet, Hungary
 123669	Potchefstroom, South Africa
 123657	Siracusa, Italy
 123637	Ciamis, Indonesia
@@ -3359,7 +3359,7 @@
 120339	Wloclawek, Poland
 120204	Monza, Italy
 120167	Fernando de la Mora, Paraguay
-120148	Budapest XIV. kerulet, Hungary
+120148	Budapest XIV kerulet, Hungary
 120115	Gangapur, India
 120083	Charleston, South Carolina, United States
 120000	Nabatiye et Tahta, Lebanon
@@ -3545,7 +3545,7 @@
 113609	Maba, China
 113605	Jandira, Brazil
 113541	Dumaguete, Philippines
-113531	Budapest XIII. kerulet, Hungary
+113531	Budapest XIII kerulet, Hungary
 113479	Mishima, Japan
 113475	El Monte, California, United States
 113430	Chorzow, Poland
@@ -4090,7 +4090,7 @@
 99223	Richardson, Texas, United States
 99218	Kenosha, Wisconsin, United States
 99211	Sertaozinho, Brazil
-99182	St. John's, Newfoundland, Canada
+99182	St John's, Newfoundland, Canada
 99171	Rialto, California, United States
 99149	Kwekwe, Zimbabwe
 99110	Worthing, United Kingdom
@@ -4130,7 +4130,7 @@
 98422	Xinshi, China
 98422	Apatzingan de la Constitucion, Michoacan, Mexico
 98387	Salto, Brazil
-98374	Budapest IV. kerulet, Hungary
+98374	Budapest IV kerulet, Hungary
 98342	Akbarabad, Iran
 98259	Xinyi, China
 98259	Al Qatif, Saudi Arabia
@@ -4369,7 +4369,7 @@
 93290	Lere, Nigeria
 93262	Polatli, Turkey
 93238	Bath, United Kingdom
-93225	Budapest XVIII. kerulet, Hungary
+93225	Budapest XVIII kerulet, Hungary
 93200	San Angelo, Texas, United States
 93184	Kalyani, India
 93174	Changping, China
@@ -4617,7 +4617,7 @@
 88760	Habiganj, Bangladesh
 88741	Pardubice, Czech Republic
 88732	Wangqing, China
-88729	Budapest II. kerulet, Hungary
+88729	Budapest II kerulet, Hungary
 88713	Rafaela, Argentina
 88702	Contai, India
 88648	Hanau am Main, Germany
@@ -5013,7 +5013,7 @@
 82291	Toledo, Spain
 82290	Laksham, Bangladesh
 82258	Polatsk, Belarus
-82222	Budapest VIII. kerulet, Hungary
+82222	Budapest VIII kerulet, Hungary
 82216	Quzhou, China
 82160	Fatsa, Turkey
 82154	Abomey, Benin
@@ -5144,7 +5144,7 @@
 80257	Kedungwaru, Indonesia
 80235	Yagoua, Cameroon
 80223	Dashiqiao, China
-80218	Budapest XV. kerulet, Hungary
+80218	Budapest XV kerulet, Hungary
 80206	Mbalmayo, Cameroon
 80200	Panshi, China
 80193	Serpong, Indonesia
@@ -5201,7 +5201,7 @@
 79329	O'Fallon, Missouri, United States
 79327	Behbahan, Iran
 79316	Zarzis, Tunisia
-79270	Budapest X. kerulet, Hungary
+79270	Budapest X kerulet, Hungary
 79253	Sant Cugat del Valles, Spain
 79247	Kottagudem, India
 79246	Nawabganj, India
@@ -5274,7 +5274,7 @@
 78277	Daura, Nigeria
 78272	Al Hayy, Iraq
 78254	Pingyi, China
-78250	Budapest XVII. kerulet, Hungary
+78250	Budapest XVII kerulet, Hungary
 78244	Mogi Mirim, Brazil
 78206	Iizuka, Japan
 78205	Valvedditturai, Sri Lanka
@@ -5417,7 +5417,7 @@
 76377	Lawrence, Massachusetts, United States
 76367	Sao Sebastiao, Brazil
 76341	Jumri Tilaiya, India
-76339	Budapest XXI. kerulet, Hungary
+76339	Budapest XXI kerulet, Hungary
 76337	Tucurui, Brazil
 76312	Furukawa, Japan
 76310	Embu Guacu, Brazil
@@ -5538,7 +5538,7 @@
 74983	Encarnacion, Paraguay
 74982	Bethlehem, Pennsylvania, United States
 74968	Haninge, Sweden
-74948	Sault Ste. Marie, Ontario, Canada
+74948	Sault Ste Marie, Ontario, Canada
 74907	Medford, Oregon, United States
 74901	Ar Ramtha, Jordan
 74889	Alvand, Iran
@@ -6069,7 +6069,7 @@
 68514	Tanghe, China
 68512	Chinchina, Colombia
 68503	L'Aquila, Italy
-68484	Budapest XVI. kerulet, Hungary
+68484	Budapest XVI kerulet, Hungary
 68482	Tsuruga, Japan
 68456	Tanauan, Philippines
 68450	Kannangad, India
@@ -6598,7 +6598,7 @@
 63405	Nanlong, China
 63387	Rio Largo, Brazil
 63387	Florence-Graham, California, United States
-63371	Budapest XX. kerulet, Hungary
+63371	Budapest XX kerulet, Hungary
 63367	Bhairahawa, Nepal
 63358	Fujioka, Japan
 63355	Garbsen, Germany
@@ -6682,7 +6682,7 @@
 62577	Tataouine, Tunisia
 62546	Molfetta, Italy
 62537	Kaitong, China
-62530	Budapest VII. kerulet, Hungary
+62530	Budapest VII kerulet, Hungary
 62528	West Coon Rapids, Minnesota, United States
 62525	Dhuburi, India
 62513	Bangil, Indonesia
@@ -6805,7 +6805,7 @@
 61642	Kamyaran, Iran
 61640	Chambery, France
 61633	Xinye, China
-61610	Budapest XIX. kerulet, Hungary
+61610	Budapest XIX kerulet, Hungary
 61607	Itapira, Brazil
 61607	Sirsi, India
 61607	Dmitrov, Russia
@@ -6814,7 +6814,7 @@
 61590	Sibay, Russia
 61584	Lishu, China
 61582	Alihe, China
-61576	Budapest IX. kerulet, Hungary
+61576	Budapest IX kerulet, Hungary
 61567	Maple Grove, Minnesota, United States
 61552	Alcoy, Spain
 61550	Cayenne, French Guiana
@@ -7276,7 +7276,7 @@
 57740	New Braunfels, Texas, United States
 57739	Duzce, Turkey
 57731	Linares, Nuevo Leon, Mexico
-57719	St. Albert, Alberta, Canada
+57719	St Albert, Alberta, Canada
 57713	San Rafael, California, United States
 57704	Manfredonia, Italy
 57661	Ash Shamiyah, Iraq
@@ -7443,7 +7443,7 @@
 56566	Moriya, Japan
 56565	Hilden, Germany
 56545	Una, India
-56544	Budapest XII. kerulet, Hungary
+56544	Budapest XII kerulet, Hungary
 56528	Obera, Argentina
 56520	Kaga Bandoro, Central African Republic
 56513	Dortyol, Turkey
@@ -8237,7 +8237,7 @@
 50508	Turbo, Colombia
 50502	Kavakli, Turkey
 50500	Decan, Kosovo
-50499	Budapest XXII. kerulet, Hungary
+50499	Budapest XXII kerulet, Hungary
 50493	Gbadolite, Democratic Republic of the Congo
 50490	Coari, Brazil
 50489	Laval, France
@@ -9649,7 +9649,7 @@
 42125	Khairabad, India
 42121	Rosa Zarate, Ecuador
 42121	Izberbash, Russia
-42120	Budapest VI. kerulet, Hungary
+42120	Budapest VI kerulet, Hungary
 42113	Northwich, United Kingdom
 42112	Kaarst, Germany
 42111	De Bilt, Netherlands
@@ -11022,7 +11022,7 @@
 36120	Westerville, Ohio, United States
 36119	Agua Dulce, Veracruz, Mexico
 36111	Dhaka, India
-36110	St. Thomas, Ontario, Canada
+36110	St Thomas, Ontario, Canada
 36108	Chipping Sodbury, United Kingdom
 36098	Paracambi, Brazil
 36097	Lage, Germany
@@ -13890,7 +13890,7 @@
 27618	Boscoreale, Italy
 27616	Az Zahiriyah, Palestinian Territory
 27616	Ridgecrest, California, United States
-27612	St. Pauli, Germany
+27612	St Pauli, Germany
 27611	Bregenz, Austria
 27611	Tehri, India
 27610	Novoaleksandrovsk, Russia
@@ -15216,7 +15216,7 @@
 24729	Belmont, Massachusetts, United States
 24729	Dedham, Massachusetts, United States
 24729	Short Pump, Virginia, United States
-24728	Budapest I. kerulet, Hungary
+24728	Budapest I kerulet, Hungary
 24724	Ferntree Gully, Victoria, Australia
 24718	Austin, Minnesota, United States
 24716	La Paz, Argentina
@@ -17723,7 +17723,7 @@
 20392	Suibara, Japan
 20388	Julio de Castilhos, Brazil
 20388	Darende, Turkey
-20387	Budapest XXIII. kerulet, Hungary
+20387	Budapest XXIII kerulet, Hungary
 20387	Humacao, Puerto Rico
 20386	Sensuntepeque, El Salvador
 20384	Blansko, Czech Republic
@@ -18025,7 +18025,7 @@
 20000	Montecanal, Spain
 20000	Riehen, Switzerland
 20000	Tekirova, Turkey
-20000	Charlotte Amalie, U.S. Virgin Islands
+20000	Charlotte Amalie, US Virgin Islands
 20000	Balaklava, Ukraine
 20000	Putyvl', Ukraine
 20000	Portslade, United Kingdom
@@ -18623,7 +18623,7 @@
 19186	Nesterovskaya, Russia
 19186	Manzanares, Spain
 19186	Leek, United Kingdom
-19185	Joaquin V. Gonzalez, Argentina
+19185	Joaquin V Gonzalez, Argentina
 19185	Laela, Tanzania
 19184	Gujan-Mestras, France
 19184	Acqui Terme, Italy
@@ -19584,7 +19584,7 @@
 17991	Extremoz, Brazil
 17991	Grimma, Germany
 17990	Sint-Genesius-Rode, Belgium
-17990	Carlos A. Carrillo, Veracruz, Mexico
+17990	Carlos A Carrillo, Veracruz, Mexico
 17988	Mahishadal, India
 17983	Gubbi, India
 17982	Sompeta, India
@@ -20072,7 +20072,7 @@
 17403	Naregal, India
 17403	White Oak, Maryland, United States
 17402	Deux-Montagnes, Quebec, Canada
-17402	Fort St. John, British Columbia, Canada
+17402	Fort St John, British Columbia, Canada
 17400	Lyepyel', Belarus
 17400	Kuusamo, Finland
 17399	Howard, Wisconsin, United States
@@ -22324,7 +22324,7 @@
 15000	Darras Hall, United Kingdom
 15000	Duong Dong, Vietnam
 15000	Matane, Quebec, Canada
-15000	Col. Bosques de las Lomas, Distrito Federal, Mexico
+15000	Col Bosques de las Lomas, Distrito Federal, Mexico
 15000	River Falls, Wisconsin, United States
 14999	Regenstauf, Germany
 14999	Chakia, India
@@ -22965,7 +22965,7 @@
 14391	Cassia, Brazil
 14391	Bechem, Ghana
 14391	Verin, Spain
-14390	Fray Luis A. Beltran, Argentina
+14390	Fray Luis A Beltran, Argentina
 14390	Whitewater, Wisconsin, United States
 14389	Kajuru, Nigeria
 14388	Tetiyiv, Ukraine
@@ -24374,7 +24374,7 @@
 13226	Alginet, Spain
 13224	Fruitville, Florida, United States
 13223	Miranda, Colombia
-13223	Juan L. Lacaze, Uruguay
+13223	Juan L Lacaze, Uruguay
 13223	Red Hill, South Carolina, United States
 13222	Soliera, Italy
 13221	Benissa, Spain
@@ -24911,7 +24911,7 @@
 12804	Eching, Germany
 12804	Pecica, Romania
 12802	Acara, Brazil
-12802	St. Georg, Germany
+12802	St Georg, Germany
 12802	Akhnur, India
 12800	Byerazino, Belarus
 12800	Arachinovo, Macedonia
@@ -27520,7 +27520,7 @@
 11067	Dekina, Nigeria
 11066	Harnai, Pakistan
 11065	Jessen, Germany
-11065	Angel R. Cabada, Veracruz, Mexico
+11065	Angel R Cabada, Veracruz, Mexico
 11064	La Victoria, Colombia
 11064	Hobro, Denmark
 11064	Leicester, Massachusetts, United States
@@ -28698,7 +28698,7 @@
 10360	Belaguntha, India
 10360	Serafimovskiy, Russia
 10359	Taksimo, Russia
-10357	Ingeniero Guillermo N. Juarez, Argentina
+10357	Ingeniero Guillermo N Juarez, Argentina
 10357	Denkendorf, Germany
 10356	Lariano, Italy
 10356	Annfield Plain, United Kingdom
@@ -29062,7 +29062,7 @@
 10155	Batken, Kyrgyzstan
 10153	Bitetto, Italy
 10153	Hecelchakan, Campeche, Mexico
-10153	Alfredo V. Bonfil, Quintana Roo, Mexico
+10153	Alfredo V Bonfil, Quintana Roo, Mexico
 10151	Doberlug-Kirchhain, Germany
 10151	Dulag, Philippines
 10151	Leon Valley, Texas, United States
@@ -37902,7 +37902,7 @@
 6523	Concepcion del Oro, Zacatecas, Mexico
 6523	New Milford, Connecticut, United States
 6522	Poviglio, Italy
-6522	Alfredo M. Terrazas, San Luis Potosi, Mexico
+6522	Alfredo M Terrazas, San Luis Potosi, Mexico
 6522	Wharton, New Jersey, United States
 6521	Mayabon, Philippines
 6521	Corni, Romania
@@ -38039,7 +38039,7 @@
 6484	Pontevico, Italy
 6484	San Martino in Rio, Italy
 6484	East Farmingdale, New York, United States
-6483	Ingeniero Luis A. Huergo, Argentina
+6483	Ingeniero Luis A Huergo, Argentina
 6483	Batie, Burkina Faso
 6483	Stainforth, United Kingdom
 6483	Jonuta, Tabasco, Mexico
@@ -43763,7 +43763,7 @@
 5091	Catablan, Philippines
 5091	Bradu, Romania
 5091	Neilston, United Kingdom
-5091	C. Militar Sarabia, Guanajuato, Mexico
+5091	C Militar Sarabia, Guanajuato, Mexico
 5091	Wahneta, Florida, United States
 5091	Toronto, Ohio, United States
 5091	Doffing, Texas, United States
@@ -47006,7 +47006,7 @@
 4485	Berlin, Maryland, United States
 4485	Beaver Creek, Oregon, United States
 4484	Zovuni, Armenia
-4484	Ortisei - St. Ulrich, Italy
+4484	Ortisei - St Ulrich, Italy
 4484	Atina, Italy
 4484	Jozefoslaw, Poland
 4484	Nojorid, Romania
@@ -47847,7 +47847,7 @@
 4348	Vila de Porto Santo, Portugal
 4348	Ocnita, Romania
 4348	Nucet, Romania
-4348	Rafael J. Garcia, Puebla, Mexico
+4348	Rafael J Garcia, Puebla, Mexico
 4348	Terrenate, Tlaxcala, Mexico
 4348	Taylor Creek, Florida, United States
 4348	Lawrenceville, Illinois, United States
@@ -52858,7 +52858,7 @@
 3618	Monghidoro, Italy
 3618	Malabago, Philippines
 3618	Moldovenesti, Romania
-3618	Ruti / Dorfzentrum, Sudl. Teil, Switzerland
+3618	Ruti / Dorfzentrum, Sudl Teil, Switzerland
 3618	Waldron, Arkansas, United States
 3618	Singac, New Jersey, United States
 3617	Trebeurden, France
@@ -53574,7 +53574,7 @@
 3530	Smedby, Sweden
 3530	Saint Asaph, United Kingdom
 3530	Port LaBelle, Florida, United States
-3529	Gobernador Juan E. Martinez, Argentina
+3529	Gobernador Juan E Martinez, Argentina
 3529	Vieillevigne, France
 3529	Le Breuil, France
 3529	Val della Torre, Italy
@@ -54080,7 +54080,7 @@
 3463	Pichayevo, Russia
 3463	Guadalupe Etla, Oaxaca, Mexico
 3462	Entrerrios, Colombia
-3462	Brgy. Bulwang, Numancia, Philippines
+3462	Brgy Bulwang, Numancia, Philippines
 3462	Digdig, Philippines
 3462	Hafik, Turkey
 3462	Morton, Mississippi, United States
@@ -54271,7 +54271,7 @@
 3439	Myrtle Creek, Oregon, United States
 3438	Mogotes, Colombia
 3438	Toftlund, Denmark
-3438	San Lorenzo di Sebato - St. Lorenzen, Italy
+3438	San Lorenzo di Sebato - St Lorenzen, Italy
 3438	Rajcza, Poland
 3438	Butoiesti, Romania
 3438	Zarubino, Russia
@@ -54279,7 +54279,7 @@
 3438	Germantown Hills, Illinois, United States
 3437	Oroslavje, Croatia
 3437	Benediktbeuern, Germany
-3437	San Leonardo in Passiria - St. Leonhard in Passeier, Italy
+3437	San Leonardo in Passiria - St Leonhard in Passeier, Italy
 3437	Mindupok, Philippines
 3437	Tishchenskoye, Russia
 3437	Frontenac, Kansas, United States
@@ -57429,7 +57429,7 @@
 3082	Fay-aux-Loges, France
 3082	Taboy Norte, Philippines
 3082	Khelyulya, Russia
-3081	Kralendijk, Bonaire, Saint Eustatius and Saba 
+3081	Kralendijk, Bonaire, Saint Eustatius and Saba
 3081	Villarrica, Colombia
 3081	Tansa, Romania
 3081	Staropavlovskaya, Russia
@@ -58287,7 +58287,7 @@
 3000	Saint-Roman, Monaco
 3000	Emst, Netherlands
 3000	Picton, New Zealand
-3000	Brgy. New Buswang, Kalibo, Philippines
+3000	Brgy New Buswang, Kalibo, Philippines
 3000	Sugcad, Philippines
 3000	Slonsk, Poland
 3000	Kunice Zarskie, Poland
@@ -58308,7 +58308,7 @@
 3000	Ruskeala, Russia
 3000	Abrau-Dyurso, Russia
 3000	Umet, Russia
-3000	Polel Diaoube-http://polel-diaoube.info, Senegal
+3000	Polel Diaoube-http://polel-diaoubeinfo, Senegal
 3000	Modderfontein, South Africa
 3000	Las Tablas, Spain
 3000	Playa de las Americas, Spain
@@ -58508,7 +58508,7 @@
 2981	Staples, Minnesota, United States
 2981	Hudson Bend, Texas, United States
 2981	Grand Mound, Washington, United States
-2980	Dorp Antriol, Bonaire, Saint Eustatius and Saba 
+2980	Dorp Antriol, Bonaire, Saint Eustatius and Saba
 2980	Rieumes, France
 2980	Kaulsdorf, Germany
 2980	Kirchanschoring, Germany
@@ -59953,7 +59953,7 @@
 2832	Keitele, Finland
 2832	Sainte-Marie-de-Re, France
 2832	Lacaune, France
-2832	San Martino in Passiria - St. Martin in Passeier, Italy
+2832	San Martino in Passiria - St Martin in Passeier, Italy
 2832	Ballygowan, United Kingdom
 2832	Watkinsville, Georgia, United States
 2831	Gries, France
@@ -60172,7 +60172,7 @@
 2811	Couvet, Switzerland
 2811	Garyville, Louisiana, United States
 2811	Ocean Grove, Massachusetts, United States
-2810	Upper Hell's Gate, Bonaire, Saint Eustatius and Saba 
+2810	Upper Hell's Gate, Bonaire, Saint Eustatius and Saba
 2810	Davezieux, France
 2810	Carnoules, France
 2810	Sibbesse, Germany
@@ -62024,7 +62024,7 @@
 2634	Daverio, Italy
 2634	Easington, Jamaica
 2634	Goutum, Netherlands
-2634	Luis M. Cintron, Puerto Rico
+2634	Luis M Cintron, Puerto Rico
 2634	Blizhne-Pesochnoye, Russia
 2634	Awsworth, United Kingdom
 2634	Arcadia, South Carolina, United States
@@ -62136,7 +62136,7 @@
 2624	Espana, Philippines
 2624	Hartford, Alabama, United States
 2624	Lake Helen, Florida, United States
-2624	K. I. Sawyer Air Force Base, Michigan, United States
+2624	K I Sawyer Air Force Base, Michigan, United States
 2623	Kelc, Czech Republic
 2623	Etables-sur-Mer, France
 2623	Montberon, France
@@ -64258,7 +64258,7 @@
 2440	Monti, Italy
 2440	Pehcevo, Macedonia
 2440	Vondelwijk, Netherlands
-2440	Brgy. Mabilo, New Washington, Philippines
+2440	Brgy Mabilo, New Washington, Philippines
 2440	Monfero, Spain
 2440	Herrera de Pisuerga, Spain
 2440	Valley, United Kingdom
@@ -65004,7 +65004,7 @@
 2379	Curon Venosta - Graun im Vinschgau, Italy
 2379	Funes - Villnoess, Italy
 2379	Cassina Rizzardi, Italy
-2379	H. Rivera Colon, Puerto Rico
+2379	H Rivera Colon, Puerto Rico
 2379	Lauderdale, Minnesota, United States
 2379	Norwood, North Carolina, United States
 2378	Saint-Georges-de-Mons, France
@@ -65845,7 +65845,7 @@
 2317	Fowler, Indiana, United States
 2317	Minorca, Louisiana, United States
 2317	Newkirk, Oklahoma, United States
-2316	Saturnino M. Laspiur, Argentina
+2316	Saturnino M Laspiur, Argentina
 2316	Murat, France
 2316	Brenouille, France
 2316	Salmtal, Germany
@@ -69417,7 +69417,7 @@
 2059	Maple Lake, Minnesota, United States
 2059	Scotland Neck, North Carolina, United States
 2059	Fairdale, Pennsylvania, United States
-2058	Pedro R. Fernandez, Argentina
+2058	Pedro R Fernandez, Argentina
 2058	Ongoni, Comoros
 2058	Kobyli, Czech Republic
 2058	Forlev, Denmark
@@ -70000,7 +70000,7 @@
 2016	Kensington, New Hampshire, United States
 2016	Campbellsport, Wisconsin, United States
 2016	Seacliff, South Australia, Australia
-2015	Mariano I. Loza, Argentina
+2015	Mariano I Loza, Argentina
 2015	Salles-sur-Mer, France
 2015	Langlade, France
 2015	Ennevelin, France
@@ -70236,8 +70236,8 @@
 2000	Pisac, Peru
 2000	Ollantaytambo, Peru
 2000	Taquile, Peru
-2000	Brgy. Tinigao, Kalibo, Philippines
-2000	Brgy. Nalook, kalibo, Philippines
+2000	Brgy Tinigao, Kalibo, Philippines
+2000	Brgy Nalook, kalibo, Philippines
 2000	Milkowice, Poland
 2000	Swieta Katarzyna, Poland
 2000	Gniechowice, Poland
@@ -73229,7 +73229,7 @@
 1798	Ottersheim, Germany
 1798	Kontokalion, Greece
 1798	Barisciano, Italy
-1798	G. L. Garcia, Puerto Rico
+1798	G L Garcia, Puerto Rico
 1798	Rairiz de Veiga, Spain
 1798	Yabluniv, Ukraine
 1798	Johnston, United Kingdom
@@ -74105,7 +74105,7 @@
 1738	Hermersberg, Germany
 1738	Stiefenhofen, Germany
 1738	Bidingen, Germany
-1738	Santa Cristina Valgardena - St. Christina in Groeden, Italy
+1738	Santa Cristina Valgardena - St Christina in Groeden, Italy
 1738	Coreno Ausonio, Italy
 1738	San Pietro Mosezzo, Italy
 1738	Pir, Romania
@@ -74859,7 +74859,7 @@
 1690	Pronstorf, Germany
 1690	Olopa, Guatemala
 1690	Colotenango, Guatemala
-1690	San Martino in Badia - St. Martin in Thurn, Italy
+1690	San Martino in Badia - St Martin in Thurn, Italy
 1690	Chianocco, Italy
 1690	Zubrzyca Dolna, Poland
 1690	Boguty-Pianki, Poland
@@ -76222,7 +76222,7 @@
 1608	Saint-Bonnet-en-Champsaur, France
 1608	Wilsum, Germany
 1608	Pfarrweisach, Germany
-1608	San Pancrazio - St. Pankraz, Italy
+1608	San Pancrazio - St Pankraz, Italy
 1608	Pinzano al Tagliamento, Italy
 1608	Arzene, Italy
 1608	Vinne, Slovakia
@@ -78067,7 +78067,7 @@
 1500	Sjolyststranda, Norway
 1500	An Nazlah ash Sharqiyah, Palestinian Territory
 1500	Isla Bastimentos, Panama
-1500	Brgy. Bachaw Norte, Kalibo, Philippines
+1500	Brgy Bachaw Norte, Kalibo, Philippines
 1500	Grebocice, Poland
 1500	Gaworzyce, Poland
 1500	Ciechow, Poland
@@ -78174,7 +78174,7 @@
 1497	Karpushikha, Russia
 1497	Mayer, Arizona, United States
 1497	Banner Hill, Tennessee, United States
-1496	Dorp Rincon, Bonaire, Saint Eustatius and Saba 
+1496	Dorp Rincon, Bonaire, Saint Eustatius and Saba
 1496	Mees, France
 1496	Liergues, France
 1496	Gaillefontaine, France
@@ -81274,7 +81274,7 @@
 1336	Thorndale, Texas, United States
 1336	Wolf Creek, Utah, United States
 1336	Independence, Wisconsin, United States
-1335	Lichnov (o. Novy Jicin), Czech Republic
+1335	Lichnov (o Novy Jicin), Czech Republic
 1335	Rozier-en-Donzy, France
 1335	Mareuil-le-Port, France
 1335	Busnes, France
@@ -84647,7 +84647,7 @@
 1187	Burnham, Maine, United States
 1187	Balfour, North Carolina, United States
 1186	Doghs, Armenia
-1186	Dorp Tera Kora, Bonaire, Saint Eustatius and Saba 
+1186	Dorp Tera Kora, Bonaire, Saint Eustatius and Saba
 1186	Janov nad Nisou, Czech Republic
 1186	Usov, Czech Republic
 1186	Pleumeur-Gautier, France
@@ -85375,7 +85375,7 @@
 1157	An Nabi Ilyas, Palestinian Territory
 1157	Tereszpol, Poland
 1157	Przecieszyn, Poland
-1157	C.A. Rosetti, Romania
+1157	CA Rosetti, Romania
 1157	Blindiana, Romania
 1157	Villardompardo, Spain
 1157	Spirit River, Alberta, Canada
@@ -86921,7 +86921,7 @@
 1098	Rosenhayn, New Jersey, United States
 1098	Wildwood, Tennessee, United States
 1098	Coulee Dam, Washington, United States
-1097	Oranjestad, Bonaire, Saint Eustatius and Saba 
+1097	Oranjestad, Bonaire, Saint Eustatius and Saba
 1097	Nova Cerekev, Czech Republic
 1097	Osek nad Becvou, Czech Republic
 1097	Cernosin, Czech Republic
@@ -89070,7 +89070,7 @@
 1017	Madison Lake, Minnesota, United States
 1017	Scobey, Montana, United States
 1017	Jerome, Pennsylvania, United States
-1016	General Manuel J. Campos, Argentina
+1016	General Manuel J Campos, Argentina
 1016	Drakhtik, Armenia
 1016	Tuzno, Croatia
 1016	Sadov, Czech Republic
@@ -90722,7 +90722,7 @@
 700	Sobienie Jeziory, Poland
 700	Wojaszowka, Poland
 700	Turosn Koscielna, Poland
-700	St. Day, United Kingdom
+700	St Day, United Kingdom
 699	Niederburg, Germany
 699	Morsdorf, Germany
 699	Minderlittgen, Germany
@@ -91735,7 +91735,7 @@
 489	Nattenheim, Germany
 489	Heidekamp, Germany
 489	Meura, Germany
-488	The Bottom, Bonaire, Saint Eustatius and Saba 
+488	The Bottom, Bonaire, Saint Eustatius and Saba
 488	Knoringen, Germany
 488	Herresbach, Germany
 488	Berglangenbach, Germany
