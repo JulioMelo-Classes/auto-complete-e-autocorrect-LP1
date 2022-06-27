@@ -5,7 +5,7 @@
 #include <vector>
 #include <iostream>
 using namespace std;
-//* WORDDATABASE
+
 WordDataBase::WordDataBase(string filePath)
 {
 	m_file_path = filePath;
@@ -38,7 +38,7 @@ WordDataBase::WordDataBase(string filePath)
 		m_base.push_back(make_pair(peso, palavra));
 	}
 }
-//* STARTSWITH
+
 pair<vector<pair< int , string>>::iterator, vector<pair< int , string>>::iterator> WordDataBase::startsWith(string t_sentence){
     auto toUpperCase = [](const string str)->string{
         string uper = str;
@@ -69,7 +69,7 @@ pair<vector<pair< int , string>>::iterator, vector<pair< int , string>>::iterato
 
 	return make_pair(lower, upper);
 }
-//* WITHSIZEOF
+
 pair<vector<pair< int , string>>::iterator, vector<pair< int , string>>::iterator> WordDataBase::withSizeOf(string t_sentence){
     auto toUpperCase = [](const string str)->string{
         string uper = str;
@@ -99,7 +99,7 @@ pair<vector<pair< int , string>>::iterator, vector<pair< int , string>>::iterato
 
 	return make_pair(lower, upper);
 }
-//* SORTALPHABETICALLY
+
 void WordDataBase::sortAlphabetically()
 {
 	auto begin = m_base.begin();
@@ -108,7 +108,7 @@ void WordDataBase::sortAlphabetically()
 	std::sort(begin, end, [](const auto &p1, const auto &p2) -> bool
 			  { return p1.second < p2.second; });
 }
-//* SORTBYSENTENCESIZE
+
 void WordDataBase::sortBySentenceSyze()
 {
 	auto begin = m_base.begin();

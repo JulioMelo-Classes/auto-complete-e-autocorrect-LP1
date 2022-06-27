@@ -570,7 +570,6 @@
 14159700	pay
 14158800	red
 14151700	an'
-14140200	4
 14124600	hath
 14067900	note
 14066700	although
@@ -798,7 +797,7 @@
 9865130	somewhat
 9849780	sudden
 9823280	value
-9799150	c.
+9799150	c
 9762830	direction
 9756740	chair
 9735300	due
@@ -869,7 +868,7 @@
 8972330	cast
 8965050	eat
 8956270	authority
-8948040	etc.
+8948040	etc
 8915130	floor
 8912520	ill
 8838150	ways
@@ -972,7 +971,7 @@
 8139660	touch
 8139270	equal
 8123210	fortune
-8120750	v.
+8120750	v
 8110940	shore
 8105640	domain
 8075660	named
@@ -2445,7 +2444,7 @@
 3240240	loving
 3238820	masters
 3234150	writers
-3232650	cf.
+3232650	cf
 3232490	permanent
 3228460	mortal
 3228460	stern
@@ -2614,7 +2613,7 @@
 2990090	shake
 2989140	industry
 2988430	claims
-2988430	pp.
+2988430	pp
 2986290	merit
 2985500	profession
 2983050	lamp
@@ -2647,7 +2646,7 @@
 2944520	match
 2940640	wrath
 2940560	continually
-2940400	rest.
+2940400	rest
 2938110	gifts
 2936920	folly
 2936290	chain
@@ -2769,7 +2768,7 @@
 2788590	alice
 2788350	hated
 2787870	civilization
-2787720	u.s.
+2787720	us
 2787400	acting
 2786690	landed
 2786210	christians
@@ -3552,7 +3551,7 @@
 2069210	grandfather
 2069050	other's
 2067940	income
-2066120	i.e.
+2066120	ie
 2065010	regards
 2064940	streams
 2063350	vigorous
@@ -4380,7 +4379,7 @@
 1576090	chains
 1576010	favorable
 1575540	tin
-1574830	imp.
+1574830	imp
 1574830	strongest
 1574510	horace
 1573800	dependent
@@ -4721,7 +4720,7 @@
 1428940	guided
 1428390	dense
 1427760	fiction
-1427360	viz.
+1427360	viz
 1427040	adds
 1427040	rows
 1426410	recommend
@@ -5498,7 +5497,7 @@
 1169290	yielding
 1169130	newsletter
 1168900	snake
-1168580	pub.
+1168580	pub
 1168180	historian
 1167870	ass
 1167870	intensity
@@ -5878,7 +5877,7 @@
 1055760	handful
 1055610	usage
 1055130	lodged
-1055130	of.
+1055130	of
 1055130	villain
 1054180	banished
 1054100	restoration
@@ -6011,7 +6010,7 @@
 1024510	painfully
 1024510	polish
 1024040	shudder
-1023560	oe.
+1023560	oe
 1022930	roofs
 1022220	comparative
 1021670	begging
@@ -6026,7 +6025,7 @@
 1019210	pg
 1019060	cured
 1018740	cargo
-1018580	prof.
+1018580	prof
 1018190	negotiations
 1018030	assented
 1018030	jail
@@ -6164,7 +6163,7 @@
 983854	judicial
 983617	consistent
 983538	ridicule
-983459	as.
+983459	as
 983459	reins
 983301	barrel
 983222	distrust
@@ -6580,7 +6579,7 @@
 887020	withal
 886861	duration
 885121	fundraising
-884646	adj.
+884646	adj
 884646	collecting
 884171	weigh
 884013	sweetest
@@ -6987,7 +6986,7 @@
 804188	heretofore
 804109	hazard
 804030	dora
-803950	sq.
+803950	sq
 803792	stead
 803713	attire
 803634	fling
@@ -7269,7 +7268,7 @@
 753555	lime
 753476	spur
 753239	unfit
-753160	gen.
+753160	gen
 752922	relish
 752606	reduction
 752606	sown
@@ -7317,7 +7316,7 @@
 745090	sting
 744536	simultaneously
 744536	watches
-744457	cong.
+744457	cong
 744378	episode
 743982	achieve
 743903	populace
@@ -7429,7 +7428,7 @@
 725470	airy
 725470	sketches
 725391	groves
-725312	col.
+725312	col
 725074	11th
 725074	comprehension
 724758	cling
@@ -7705,11 +7704,11 @@
 680533	piles
 680454	hardware
 680375	engaging
-680217	e.g.
+680217	eg
 680217	peer
 680138	counties
 680138	mocking
-679901	ch.
+679901	ch
 679821	avoiding
 679663	rebuke
 679347	abolished
@@ -8027,7 +8026,7 @@
 629426	heal
 629426	millennium
 629347	karl
-629110	ft.
+629110	ft
 628951	staid
 628793	planting
 628793	theatrical
@@ -8777,7 +8776,7 @@
 524522	adult
 524443	solace
 524284	biography
-524126	ff.
+524126	ff
 524126	hardship
 524126	lied
 523968	donkey
@@ -8875,7 +8874,7 @@
 511231	dictionary
 511231	prettiest
 510993	adoration
-510914	icel.
+510914	icel
 510914	wager
 510756	involving
 510440	pathway
@@ -8932,7 +8931,7 @@
 504031	contentment
 503952	sterling
 503873	veneration
-503715	p.m.
+503715	pm
 503478	barking
 503478	bower
 503478	organism
@@ -9285,7 +9284,7 @@
 460835	plural
 460756	initiative
 460677	inexhaustible
-460598	a.m.
+460598	am
 460361	spider
 460282	reed
 460282	streak
@@ -9654,7 +9653,7 @@
 421200	dover
 421041	ambush
 421041	evermore
-421041	mass.
+421041	mass
 420962	blot
 420962	nook
 420962	verdure
