@@ -83,9 +83,7 @@ AutoCorrect* Interface::m_autoCorrect = nullptr;
             autoCorrectWord = (*beginCorr).second;
             beginCorr++;
         }
-
-        const string spacesAutoComplete = Interface::getSpaceString(lineSize - autoCompleteWord.length());
-
+        
         Interface::printLine(autoCompleteWord, autoCorrectWord, lineSize);
     }
 }

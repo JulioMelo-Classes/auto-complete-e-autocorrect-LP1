@@ -11,18 +11,6 @@ AutoComplete::AutoComplete(WordDataBase *dataBase)
 }
 
 void AutoComplete::searchPrefix(string t_val){
-     auto toUpperCase = [](const string str)->string{
-        string uper = str;
-
-        for(size_t i=0; i < str.length(); i++){
-            uper[i] = std::toupper(str[i]);
-        }
-
-        return uper;
-    }; // Função para deixar toda string em maiúsculo
-
-    t_val = toUpperCase(t_val);
-
     const auto iteratorsAutoComplete = m_dbWords->startsWith(t_val); 
 
     const auto begin = iteratorsAutoComplete.first;
