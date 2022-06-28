@@ -19,6 +19,8 @@ void AutoComplete::searchPrefix(string t_val){
     for(auto it = begin; it < end; it++){
         m_vComp.push_back(*it);
     }
+
+    this->sortByWeight(); // Ordena a base por peso
 }
 
 void AutoComplete::clearVComp(){
