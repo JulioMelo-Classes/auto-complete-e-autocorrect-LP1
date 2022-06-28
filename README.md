@@ -164,94 +164,170 @@ Em que `<base_de_palavras>` trata-se do caminho para a base de palavras (arquivo
 # 7-Validação e testes
 ## 7-1 Execução do teste
 
-Para a execução de testes sem a necessidade de digitar as entradas manualmente, foram criados o arquivo ``test.txt`` dentro do diretório raiz do projeto `/tests`. Logo, o arquivo de teste se encontra em `./tests/test.txt`. 
+Para a execução de testes sem a necessidade de digitar as entradas manualmente, foram criados os seguintes arquivos de teste:`test_autocomplete.txt`, `teste_autocorrect.txt` dentro do diretório raiz do projeto `/tests`.  Cada arquivo contém um conjunto de entradas (sentenças) que serão lidas pelo programa no momento de teste.
 
-Nesse arquivo, se encontra o seguinte conteúdo:
+O arquivo `test_autocomplete.txt` contém as sentenças para testar a funcionalidade do auto complete, o `test_autocorrect.txt` para testar o autocorrect.
 
-```bash
-cor
-car
-amo
-bra
-```
+O que faremos é inserir o conteúdo desses arquivos na entrada do sistema (O que seria equivalente a digitar cada uma dessas palavras quando o programa pedisse a entrada). 
 
-O que faremos é inserir o conteúdo desse arquivo na entrada do sistema (O que seria equivalente a digitar cada uma dessas palavras quando o programa pedisse a entrada). Para isso, execute o seguinte comando dentro da pasta `build` para iniciar a validação:
+## 7-2 Teste Autocomplete
+
+Para executar os testes do autocomplete digite o seguinte comando dentro da pasta `build/` do projeto:
 
 ```bash
-./words_complete_correct ../data/ptbrcorpus.txt < ../tests/test.txt
+./words_complete_correct ../data/ptbrcorpus.txt < ../tests/test_autocomplete.txt
 ```
 
-> **OBS**: A base de palavras utilizada no exemplo foi a do arquivo ptbrcorpus.txt.
 
-Assim serão geradas 4 tabelas de saída contendo as palavras Matches, uma para cada sentença "digitada" (Que nesse caso são: "cor", "car", "amo" e "bra").
 
-## 7-2 Saída esperada
+> **OBS:** A base utilizada nesse teste foi a **ptbrcorpus**.
 
-Como mencionado anteriormente, serão geradas 4 tabelas com as palavras Matches. Dessa forma, as saídas esperadas para cada sentença são:
+Assim serão geradas 4 tabelas de saída contendo as palavras Matches, uma para cada sentença "digitada" (Que nesse caso são: "cor", "car", "geo" e "bra"). As saídas esperadas para cada sentença são:
 
 * Sentença "cor"
 
   ```bash
   Autocomplete      | Autocorrect
-  CORPO             | CORPO
-  CORTE             | CORTE
-  CORRENTE          | CALOR
-  CORRELACAO        | CORES
-  CORINTHIANS       | COBRE
-  CORRESPONDE       | COMER
-  CORACAO           | LO
-  CORRECAO          | CORRE
-  CORPORAL          | ROM
-  CORPOS            | VOZ
+  CORPO             | ROM
+  CORTE             | VOZ
+  CORRENTE          | 
+  CORRELACAO        | 
+  CORINTHIANS       | 
+  CORRESPONDE       | 
+  CORACAO           | 
+  CORRECAO          | 
+  CORPORAL          | 
+  CORPOS            |
   ```
 
 * Sentença "car":
 
   ```bash
   Autocomplete       | Autocorrect
-  CARLOS             | FICAR
-  CARACTERISTICAS    | CRIAR
-  CARATER            | CLARO
-  CARDOSO            | CARGA
-  CARGA              | CARRO
-  CARRO              | CARGO
-  CARVALHO           | CARTA
-  CARGO              | CEARA
-  CARREIRA           | CESAR
-  CARACTERISTICA     | CARNE
+  CARLOS             | No match found
+  CARACTERISTICAS    | 
+  CARATER            | 
+  CARDOSO            | 
+  CARGA              | 
+  CARRO              | 
+  CARVALHO           | 
+  CARGO              | 
+  CARREIRA           | 
+  CARACTERISTICA     |
   ```
 
-* Sentença "amo":
+* Sentença "geo":
 
   ```bash
   Autocomplete   | Autocorrect
-  AMOSTRAS       | CAMPO
-  AMOSTRA        | AMBOS
-  AMONG          | VAMOS
-  AMOSTRAGEM     | AMIGO
-  AMORIM         | AMPLO
-                 | AMONG
-                 | RAMOS
-                 | LO
-                 | AMARO
-                 | CARMO
+  GEOGRAFIA      | No match found
+  GEOGRAFICAS    | 
+  GEORGE         | 
+  GEOGRAFICA     | 
+  GEOMETRIA      | 
+  GEOGRAFICO     | 
   ```
-
+  
 * Sentença "bra":
 
   ```bash
   Autocomplete   | Autocorrect
-  BRASIL         | OBRAS
-  BRASILEIRA     | OBRA
-  BRASILEIRO     | FIBRA
-  BRASILIA       | BRACO
-  BRASILEIROS    | BARRA
-  BRASILEIRAS    | BRUTA
-  BRAZIL         | DIA
-  BRANCO         | BARAO
-  BRANCOS        | BRAGA
-  BRANCA         | BRIGA
+  BRASIL         | OBRA
+  BRASILEIRA     | DIA
+  BRASILEIRO     | 
+  BRASILIA       | 
+  BRASILEIROS    | 
+  BRASILEIRAS    | 
+  BRAZIL         | 
+  BRANCO         | 
+  BRANCOS        | 
+  BRANCA         |
   ```
+
+## 7-3 Teste Autocorrect
+
+Para executar os testes do autocorrect digite o seguinte comando dentro da pasta `build/` do projeto:
+
+```bash
+./words_complete_correct ../data/wikitionary.txt < ../tests/test_autocorrect.txt
+```
+
+
+
+> **OBS:** A base utilizada nesse teste foi a **wikitionary**.
+
+Assim serão geradas 4 tabelas de saída contendo as palavras Matches, uma para cada sentença "digitada" (Que nesse caso são: "let", "vine", "test" e "last"). As saídas esperadas para cada sentença são:
+
+* Sentença "let":
+
+  ```
+  Autocomplete   | Autocorrect
+  letter         | let
+  letters        | yet
+  letting        | get
+  lets           | left
+                 | set
+                 | met
+                 | led
+                 | lot
+                 | lest
+                 | wet
+  ```
+
+  
+
+* Sentença "vine":
+
+  ```
+  Autocomplete   | Autocorrect
+  vines          | vine
+  vinegar        | fine
+                 | line
+                 | mine
+                 | wine
+                 | nine
+                 | vice
+                 | dine
+                 | pine
+                 | vile
+  ```
+
+  
+
+* Sentença "test":
+
+  ```
+  testimony      | test
+  testify        | best
+  tested         | rest
+                 | west
+                 | text
+                 | lest
+                 | tent
+                 | rest
+                 | jest
+                 | nest
+  ```
+
+  
+
+* Sentença "last":
+
+  ```
+  Autocomplete   | Autocorrect
+  lasted         | last
+  lasting        | least
+  lastly         | lost
+                 | past
+                 | east
+                 | cast
+                 | fast
+                 | vast
+                 | hast
+                 | list
+  ```
+
+  
 
 # Autorship
 
