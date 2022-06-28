@@ -99,12 +99,3 @@ vector<pair< int , string>>::iterator AutoCorrect::getEnd(){return m_vCorr.end()
 size_t AutoCorrect::getBaseSize(){return m_vCorr.size();};
 
 void AutoCorrect::clearVCorr(){m_vCorr.clear();};
-
-void AutoCorrect::sortByWeight(){
-    const auto begin = m_vCorr.begin();
-    const auto end = m_vCorr.end();
-    
-    sort(begin, end, [](const auto p1, const auto p2)->bool{
-        return p1.first > p2.first;
-    });
-}
