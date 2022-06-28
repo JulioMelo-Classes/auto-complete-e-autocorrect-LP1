@@ -162,7 +162,7 @@ Em que `<base_de_palavras>` trata-se do caminho para a base de palavras (arquivo
 ```
 
 # 7-Validação e testes
-## 7-1 Execução do teste
+## 7-1 Arquivos de Teste
 
 Para a execução de testes sem a necessidade de digitar as entradas manualmente, foram criados os seguintes arquivos de teste:`test_autocomplete.txt`, `teste_autocorrect.txt` dentro do diretório raiz do projeto `/tests`.  Cada arquivo contém um conjunto de entradas (sentenças) que serão lidas pelo programa no momento de teste.
 
