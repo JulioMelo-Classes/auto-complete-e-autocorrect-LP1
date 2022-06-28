@@ -33,11 +33,9 @@ class AutoCorrect{
         /**
          * @brief Busca as palavras com tamanhos proximo e calcula a distancia levenshtein entre elas
          * @param t_word palavra a ser comparada na base de dados
-         * @param t_distanceUp define o tamanha maximo das palavras candidatas em relação a t_word
-         * @param t_distanceDown define o tamanho minino das palavras candidatas em relacao a t_word
          * @param t_distanceGap define a distancia Levenshtein aceitavel para as palavras candidatas
          */
-        void wordsWithShortestDistance(string t_word, int t_distanceUp, int t_distanceDown, int distanceGap);
+        void wordsWithShortestDistance(string t_word, int distanceGap);
 
         /**
          * @brief Pega o iterador do começo da base do autoCorrect

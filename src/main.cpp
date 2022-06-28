@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
             acomp.searchPrefix(sentence); // procura na base de dados por palavras que iniciem com esse prefixo
             acomp.sortByWeight();     // Ordena o vetor de palavras candidatas ao autocomplete pelo peso
 
-            acorr.wordsWithShortestDistance(sentence, 2, 2, 3); // procura na base de dados por palavras para o autocorrect
+            acorr.wordsWithShortestDistance(sentence, 2); // procura na base de dados por palavras para o autocorrect
 
             Interface::printCandidateWords(true, 10, "Matches são");
 

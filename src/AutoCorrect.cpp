@@ -10,7 +10,7 @@ AutoCorrect::AutoCorrect(WordDataBase *dataBase)
     m_dbWords = dataBase;
 }
 
-void AutoCorrect::wordsWithShortestDistance(string t_word, int t_distanceUp, int t_distanceDown, int t_distanceGap){
+void AutoCorrect::wordsWithShortestDistance(string t_word, int t_distanceGap){
     auto toUpperCase = [](const string str)->string{
         string uper = str;
 
@@ -31,7 +31,7 @@ void AutoCorrect::wordsWithShortestDistance(string t_word, int t_distanceUp, int
 
     for (auto it = begin; it < end; it++)
     {
-        if (AutoCorrect::levenshteinDistance((*it).second, t_word, (*it).second.size(), t_word.size()) < t_distanceGap) //Distancia aceitavel
+        if (AutoCorrect::levenshteinDistance((*it).second, t_word, (*it).second.size(), t_word.size()) <= t_distanceGap) //Distancia aceitavel
         {
             m_vCorrTemp.push_back(*it);
         }
@@ -42,7 +42,7 @@ void AutoCorrect::wordsWithShortestDistance(string t_word, int t_distanceUp, int
 
 
 
-    for (size_t j = 0; j < t_distanceGap; j++)
+    for (size_t j = 0; j <= t_distanceGap; j++)
     {
         for (size_t i = 0; i < m_vCorrTemp.size(); i++)
         {
@@ -60,6 +60,18 @@ int min(int x, int y, int z) { return min(min(x, y), z); }
 
 int AutoCorrect::levenshteinDistance(string t_valA, string t_valB, int t_sizeA, int t_sizeB)
 {
+     auto toUpperCase = [](const string str)->string{
+        string uper = str;
+        for(size_t i=0; i < str.length(); i++){
+            uper[i] = std::toupper(str[i]);
+        }
+        return uper;
+    }; // Função para deixar toda string em maiúsculo
+
+	t_valA = toUpperCase(t_valA);
+	t_valB = toUpperCase(t_valB);
+
+
     int dp[t_sizeA + 1][t_sizeB + 1];
     for (int i = 0; i <= t_sizeA; i++)
     {
