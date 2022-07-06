@@ -1,4 +1,36 @@
 # Autocomplete e Autocorrect
+# Avaliação
+
+## Geral
+
+G1. Implementção e Uso das Classes Especificadas | 10/10 pontos
+- Observações: Blz, acho que vc ainda está meio regrado a get/set ao invés de colocar as coisas nos construtores mas ok. A duplicação de dados também é ruim, mas é entendível se você priorizar por performance (tempo de busca) ao invés de memória.
+
+G2. Implementação da Interface textual Especificada | 10/10 pontos
+- Observações: 
+
+G3. Implementação da solução de auto complete | 10/10 pontos
+- Observações:
+
+G4. Implementação da solução de auto correct | 10/10 pontos
+- Observações:
+
+G5. Método de validação das implementações | 10/10 pontos
+- Observações: Ficou realmente bom no formato que vocês usaram, bem que poderiam ter usado um script eim? 
+
+G6. Penalidades por violação na especificação | 0/-25 pontos
+- Observações: Aqui houve uma clara violação de setar/retornar containers nos métodos AutoCorrect/AutoComplete::getEnd()/getBegin(), vocês claramente querem retornar o container mas como a especificação não deixa, usaram a criativade para resolver o problema de uma das inúmeras formas que c++ permite -.-'; Não vou tirar pontos, pois vocês usaram as regras mas fica o textão de aviso. A forma esperada aqui era o seguinte: interface recebe a entrada do usuario, passa para AutoComplete/AutoCorrect que retorna o resultado do processamento. Veja que não tem qualquer vantagem em guardar o resultado nas classes, afinal os dados não tem qualquer utilidade depois de impressos, vocês mesmos acabam limpando esses vetores logo após no inicio do loop principal.
+
+## Código
+
+C1. Documentação do código e readme | 10/10 pontos
+- Observações: Alguns poucos atributos não estão documentados
+
+C2. Organização e indentação do código | 10/10 pontos
+- Observações:
+
+C3. Compilação automatizada (obrigatória) | ok
+- Observações:
 
 ### Sumário
 1. [Introdução](#1-introdução)
